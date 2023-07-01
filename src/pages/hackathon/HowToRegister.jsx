@@ -2,7 +2,7 @@
 
 import { Button, Flex, Grid, Text } from '@chakra-ui/react';
 import React from 'react'
-import { primaryColor } from '../theme';
+import { primaryColor } from '@/app/theme';
 
 const HowToRegister = () => {
   return (

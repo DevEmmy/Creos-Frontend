@@ -1,7 +1,7 @@
 "use client"
 import { Flex, Grid, ListItem, Text, List, UnorderedList } from '@chakra-ui/react'
 import React from 'react'
-import { primaryColor } from '../theme'
+import { primaryColor } from '@/app/theme'
 import Hackathon from './Hackathon'
 
 const Prizes = () => {
