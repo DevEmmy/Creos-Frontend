@@ -32,7 +32,7 @@ const Banner = () => {
                 fontSize={"18px"}
                 textAlign={"center"}
             >
-                At Creos Geek Out, we believe that your network holds the key to unlocking endless opportunities and success. It's the perfect platform to foster collaboration, meet potential partners, connect with customers, and so much more.</Text>
+                At Creos Geek Out, we believe that your network holds the key to unlocking endless opportunities and success. It&apos;s the perfect platform to foster collaboration, meet potential partners, connect with customers, and so much more.</Text>
             <Button background={secondaryColor} color={"black"} border={"none"} padding={"20px 30px"} fontSize={"14px"}>Get Tickets</Button>
         </Flex>
     </>

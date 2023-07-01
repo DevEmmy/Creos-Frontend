@@ -34,7 +34,7 @@ const Expected = () => {
                         What can you expect at Creos Geek Out?
                     </Text>
                     <Text >
-                        Here's a glimpse into the exciting world that awaits you
+                        Here&apos;s a glimpse into the exciting world that awaits you
                     </Text>
                 </Flex>
 
@@ -65,7 +65,7 @@ const Expected = () => {
                 </Flex>
 
                 <Text textAlign={"center"} padding={{base: "10px 0%", lg:"20px 10%"}} color={"#333333"}>
-                So mark your calendars and get ready to Geek Out with us at Creos Geek Out! Join us for a day of excitement, inspiration, and endless possibilities. Together, let's embrace our inner geeks, connect with the future, and make remarkable things happen!
+                So mark your calendars and get ready to Geek Out with us at Creos Geek Out! Join us for a day of excitement, inspiration, and endless possibilities. Together, let&apos;s embrace our inner geeks, connect with the future, and make remarkable things happen!
                 </Text>
             </Flex>
         </>

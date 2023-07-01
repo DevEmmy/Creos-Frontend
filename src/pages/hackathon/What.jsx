@@ -22,7 +22,7 @@ const What = () => {
                 </Text>
 
                 <Text>
-                    Over the course of the event, participants will form diverse teams and leverage a wide array of groundbreaking technologies to develop sustainable solutions that address pressing issues in line with the United Nations' Sustainable Development Goals.
+                    Over the course of the event, participants will form diverse teams and leverage a wide array of groundbreaking technologies to develop sustainable solutions that address pressing issues in line with the United Nations&apos; Sustainable Development Goals.
                 </Text>
             </Flex>
         </Grid>

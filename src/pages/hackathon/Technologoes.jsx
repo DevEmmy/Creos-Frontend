@@ -52,7 +52,7 @@ const Technologoes = () => {
                 {
                     details.map((item, index)=>{
                         return(
-                            <Flex flexDir={"column"} color={"#333333"} gap="10px">
+                            <Flex key={index} flexDir={"column"} color={"#333333"} gap="10px">
                                 <Text fontSize={"16px"} fontWeight={"600"} textAlign={"center"}>{item.title}</Text>
                                 <Text fontSize={"12px"} textAlign={"center"}>{item.description}</Text>
                             </Flex>
