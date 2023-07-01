@@ -24,12 +24,12 @@ const ToLearn = () => {
     ]
   return (
     <>
-        <Flex flexDir={"column"} width={"80%"} margin={"100px auto"} gap={"30px"}>
+        <Flex flexDir={"column"} width={{lg:"80%", base: "90%"}} margin={"100px auto"} gap={"30px"}>
             <Text textAlign={"center"} fontSize={"30px"} fontWeight={"600"}>
                 What to start Learning?
             </Text>
 
-            <Grid gridTemplateColumns={"repeat(3, 1fr)"} gap={"30px"}>
+            <Grid gridTemplateColumns={{base: "none" , lg:"repeat(3, 1fr)"}} gap={"30px"}>
                 {
                     toLearn.map((item, i)=>{
                         return(

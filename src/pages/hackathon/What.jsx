@@ -7,7 +7,7 @@ import { primaryColor } from '../theme';
 const What = () => {
   return (
     <>
-        <Grid gridTemplateColumns={"1fr 1fr"} width={"80%"} margin={"100px auto"}>
+        <Grid gridTemplateColumns={{base: "none", lg:"1fr 1fr"}} width={{base:"90%", lg:"80%"}} margin={"100px auto"} flexDir={"column-reverse"} display={{base: "flex", lg: "grid"}} gap={"20PX"}>
             <Box width={"70%"} height={"400px"} background={"black"}>
 
             </Box>

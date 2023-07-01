@@ -12,25 +12,26 @@ const Banner = () => {
             align={"center"}
             justify={"center"}
             flexDir={"column"}
-            height={"90vh"}
-            px={"20%"}
+            height={{base: "70vh" ,lg:"90vh"}}
+            px={{base: "5%", lg:"20%"}}
+            lineHeight={"1"}
             gap={"20px"}
         >
             <Text
                 color={"white"}
-                fontSize={"50px"}
+                fontSize={{base: "35px", lg:"50px"}}
                 fontWeight={"600"}
                 textAlign={"center"}
             >Pioneering Sustainable Solutions for a Better Future</Text>
             <Text color={"white"}
-                    fontSize={"18px"}
+                    fontSize={{base: "14px", lg:"18px"}}
                     textAlign={"center"}
             >
                 Join us for the groundbreaking event of the year, Creos Hackathon, where creators, innovators, and visionaries unite to shape a sustainable future aligned with the United Nations' Sustainable Development Goals. 
             </Text>
             <Text 
                 color={"white"}
-                fontSize={"18px"}
+                fontSize={{base: "14px", lg:"18px"}}
                 textAlign={"center"}
             >
                 Prepare to be immersed in a whirlwind of cutting-edge technologies, collaborative problem-solving, and the thrill of bringing game-changing ideas to life.</Text>

@@ -38,7 +38,7 @@ const Expected = () => {
                     </Text>
                 </Flex>
 
-                <Grid gridTemplateColumns={"1fr 1fr 1fr"} alignItems={"center"} justifyContent={"space-between"} gap={"30px"}>
+                <Grid gridTemplateColumns={{base: "none", lg:"1fr 1fr 1fr"}} alignItems={"center"} justifyContent={"space-between"} gap={"30px"}>
                     {
                         expected.slice(0, 3).map((item, index) => {
                             return (
@@ -51,11 +51,11 @@ const Expected = () => {
                     }
                 </Grid>
 
-                <Flex gridTemplateColumns={"1fr 1fr"} alignItems={"center"} justifyItems={"center"} justifyContent={"center"} gap={"30px"}>
+                <Flex gridTemplateColumns={"1fr 1fr"} flexDir={{base:"column", lg: "row"}} alignItems={"center"} justifyItems={"center"} justifyContent={"center"} gap={"30px"}>
                     {
                         expected.slice(3, 5).map((item, index) => {
                             return (
-                                <Flex background={primaryColor} color={"white"} key={index} flexDir={"column"} width={"31.66%"} padding={"20px"} gap={"10px"} height={"190px"}>
+                                <Flex background={primaryColor} color={"white"} key={index} flexDir={"column"} width={{base: "100%", lg:"31.66%"}} padding={"20px"} gap={"10px"} height={"190px"}>
                                     <Text fontWeight={"600"} fontSize={"16px"}>{item.title}</Text>
                                     <Text fontSize={"14px"}>{item.description}</Text>
                                 </Flex>
@@ -64,7 +64,7 @@ const Expected = () => {
                     }
                 </Flex>
 
-                <Text textAlign={"center"} padding={"20px 10%"} color={"#333333"}>
+                <Text textAlign={"center"} padding={{base: "10px 0%", lg:"20px 10%"}} color={"#333333"}>
                 So mark your calendars and get ready to Geek Out with us at Creos Geek Out! Join us for a day of excitement, inspiration, and endless possibilities. Together, let's embrace our inner geeks, connect with the future, and make remarkable things happen!
                 </Text>
             </Flex>

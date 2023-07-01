@@ -44,15 +44,15 @@ const Technologoes = () => {
     ]
   return (
     <>
-        <Flex flexDir={"column"} background={"#F3F3F3"} padding={"100px 10%"} align={"center"} justify={"client"}>
+        <Flex flexDir={"column"} background={"#F3F3F3"} padding={{base: "60px 5%", lg:"100px 10%"}} align={"center"} justify={"client"}>
             <Text color={"#2B4E43"} fontSize={"16px"}>Unlock the Potential of Technologies:</Text>
-            <Text color={"#333333"} textAlign={"center"} fontSize={"30px"} fontWeight={"600"}>During Creos Hackathon, participants have the opportunity to explore and harness the potential of the following technologies:</Text>
+            <Text color={"#333333"} textAlign={"center"} fontSize={{base:"20px", lg: "30px"}} fontWeight={"600"}>During Creos Hackathon, participants have the opportunity to explore and harness the potential of the following technologies:</Text>
 
-            <Grid gridTemplateColumns={"repeat(3, 1fr)"} gap={"50px"} padding={"30px"}>
+            <Grid gridTemplateColumns={{base: "none", lg:"repeat(3, 1fr)"}} gap={"50px"} padding={"30px"}>
                 {
                     details.map((item, index)=>{
                         return(
-                            <Flex flexDir={"column"} color={"#333333"} gap="20px">
+                            <Flex flexDir={"column"} color={"#333333"} gap="10px">
                                 <Text fontSize={"16px"} fontWeight={"600"} textAlign={"center"}>{item.title}</Text>
                                 <Text fontSize={"12px"} textAlign={"center"}>{item.description}</Text>
                             </Flex>

@@ -12,13 +12,15 @@ const Banner = () => {
             align={"center"}
             justify={"center"}
             flexDir={"column"}
-            height={"90vh"}
-            px={"20%"}
+            height={{base: "70vh" ,lg:"90vh"}}
+            px={{base: "5%", lg:"20%"}}
+            lineHeight={"1"}
             gap={"20px"}
         >
             <Text
                 color={"white"}
-                fontSize={"50px"}
+                fontSize={{base: "35px", lg:"50px"}}
+                textAlign={"center"}
                 fontWeight={"600"}
             >Your Inner Geek with the Future!</Text>
             <Text color={"white"}

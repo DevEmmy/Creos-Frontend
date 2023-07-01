@@ -8,18 +8,19 @@ const People = ({title, subText, people}) => {
         <Flex
             alignItems={"center"}
             flexDir={"column"}
-            width={"80%"}
+            width={{lg:"80%", base:"90%"}}
             margin={"80px auto"}
         >
             <Text
                 fontSize={"26px"}
                 fontWeight={"600"}
+                textAlign={"center"}
             >{title}</Text>
-            <Text>{subText}</Text>
+            <Text textAlign={"center"}>{subText}</Text>
             <Flex
                 alignItems={"center"}
                 justifyContent={"center"}
-                gap={"30px"}
+                gap={{base: "20px", lg:"30px"}}
                 margin={"20px 0"}
             >
                 {
@@ -27,8 +28,8 @@ const People = ({title, subText, people}) => {
                         return(
                             <Flex key={index} width={"100%"} flexDir={"column"}>
                                 <Image src={person.image} width={"100%"} height={"30%"} objectFit={"cover"} mb="10px"/>
-                                <Text fontSize="16px" fontWeight="600">{person.name}</Text>
-                                <Text fontSize="14px">{person.position}</Text>
+                                <Text fontSize={{base: "14px", lg:"16px"}} fontWeight={{lg:"600", base: "600"}}>{person.name}</Text>
+                                <Text fontSize={{base:"10px", lg:"14px"}}>{person.position}</Text>
                             </Flex>
                         )
                     })

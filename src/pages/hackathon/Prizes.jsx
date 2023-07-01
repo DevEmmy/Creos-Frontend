@@ -7,7 +7,7 @@ import Hackathon from './Hackathon'
 const Prizes = () => {
   return (
     <>
-        <Grid gridTemplateColumns={"repeat(3, 1fr)"} gap="30px" margin={"50px 10%"} color={"white"}>
+        <Grid gridTemplateColumns={{base:"none", lg:"repeat(3, 1fr)"}} gap="30px" margin={"50px 10%"} color={"white"}>
             <Flex background={primaryColor} flexDir={"column"} padding={"20px"} gap="10px">
                 <Text fontSize={"16px"} fontWeight={"600"}>Submission Countdown</Text>
                 <UnorderedList fontSize={"14px"}>

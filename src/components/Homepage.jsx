@@ -16,7 +16,7 @@ const Homepage = () => {
         <Nav />
         
         {/* Banner */}
-        <Grid gridTemplateColumns={"1fr 1fr"} padding={"100px 10%"} background={primaryColor}>
+        <Grid gridTemplateColumns={{base: "none", lg:"1fr 1fr"}} padding={"100px 10%"} background={primaryColor} lineHeight={{base: "1"}}>
             <Flex flexDir={"column"} gap={'20px'} color={"white"}>
                 <Text fontSize={"40px"} fontWeight={"600"}>Learn futuristic in-demand technology skills collaborating with AI and Robotics</Text>
                 <Text fontSize={"16px"}>Unlock a Sustainable Future: Empower Yourself with Cutting-Edge Tech Skills on Creos</Text>

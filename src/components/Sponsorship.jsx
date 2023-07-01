@@ -27,10 +27,10 @@ const Sponsorship = () => {
     ]
   return (
         <>
-            <Flex flexDir={"column"} width={"80%"} margin={"100px auto"} gap={"30px"}>
+            <Flex flexDir={"column"} width={{lg:"80%", base: "90%"}} margin={"100px auto"} gap={"30px"}>
                 <Text textAlign={"center"} fontSize={"30px"} fontWeight={"600"}>Need funding or Scholarship</Text>
 
-                <Grid gridTemplateColumns={"1fr 1fr 1fr"} gap={"50px"}>
+                <Grid gridTemplateColumns={{base: "none", lg:"1fr 1fr 1fr"}} gap={"50px"}>
                     {sponsors.map((tool, index) => {
                         return (
                             <Flex key={index} flexDir={"column"} gap={"20px"} padding={"10px"} border={"1px solid #eee"}>
@@ -40,7 +40,7 @@ const Sponsorship = () => {
                                     <Text fontSize={"14px"}>{tool.desc1}</Text>
                                     <Text fontSize={"14px"}>{tool.desc2}</Text>
                                 </Flex>
-                                <Flex gap={"20px"}>
+                                <Flex gap={"20px"} flexDir={{base: "column", lg: "row"}}>
                                     <Button width={"fit-content"} border={"1px solid"} color={"white"} background={primaryColor} padding={"20px 30px"}>
                                         {tool.buttonText}
                                     </Button>

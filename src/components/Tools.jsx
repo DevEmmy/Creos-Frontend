@@ -33,10 +33,10 @@ const Tools = () => {
     ]
   return (
         <>
-            <Flex flexDir={"column"} width={"80%"} margin={"100px auto"} gap={"30px"}>
+            <Flex flexDir={"column"} width={{lg: "80%", base: "90%"}} margin={"100px auto"} gap={"30px"}>
                 <Text textAlign={"center"} fontSize={"30px"} fontWeight={"600"}>Best Tools you need at Creos</Text>
 
-                <Grid gridTemplateColumns={"1fr 1fr"} gap={"50px"}>
+                <Grid gridTemplateColumns={{ base: "none", lg:"1fr 1fr"}} gap={"50px"}>
                     {tools.map((tool, index) => {
                         return (
                             <Flex key={index} flexDir={"column"} gap={"20px"}>
@@ -46,7 +46,7 @@ const Tools = () => {
                                     <Text>{tool.desc1}</Text>
                                     <Text>{tool.desc2}</Text>
                                 </Flex>
-                                <Flex gap={"20px"}>
+                                <Flex gap={"20px"} flexDir={{base: "column", lg: "row"}}>
                                     <Button width={"fit-content"} border={"1px solid"} color={"white"} background={primaryColor} padding={"20px 30px"}>
                                         {tool.buttonText}
                                     </Button>
