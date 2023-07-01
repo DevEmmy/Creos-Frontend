@@ -7,8 +7,9 @@ const Logo = () => {
   return (
     <Flex
     >
-        <Image src={logo.src} height={"auto"}/>
-        <Image src={logo1.src} height={"auto"}/>
+        {/* imported logo */}
+        <Image src={logo.src} alt="logo" height={"auto"}/>
+        <Image src={logo1.src} alt="logo" height={"auto"}/>
     </Flex>
   )
 }
