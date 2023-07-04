@@ -1,7 +1,7 @@
 'use client';
 
 import { primaryColor } from '@/app/theme';
-import { Flex, Grid, Link, Text } from '@chakra-ui/react';
+import { Flex, Grid, Link, Box, Text } from '@chakra-ui/react';
 import React from 'react'
 import Logo from './Logo';
 
@@ -59,8 +59,8 @@ const Footer = () => {
     ]
   return (
     <>
-        <Grid background={primaryColor} color={"white"} gridTemplateColumns={{base: "1fr 1fr",lg:"1.4fr 1fr 1fr 1.2fr"}} gap={"20px"} padding={"50px 10%"}>
-            <Flex width={"40%"} height={"20px"}>
+        <Grid background={primaryColor} color={"white"} gridTemplateColumns={{base: "1fr 1fr",lg:"1.4fr 1fr 1fr 1.2fr"}} gap={"20px"} padding={"50px 10%"} alignItems={"start"}>
+            <Flex display={{base: "none", lg: "flex"}}>
                 <Logo />
             </Flex>
             
@@ -110,6 +110,11 @@ const Footer = () => {
                 }
             </Flex>
 
+            <Box />
+
+            <Flex display={{base: "flex", lg: "none"}}>
+                <Logo />
+            </Flex>
 
         </Grid>
     </>

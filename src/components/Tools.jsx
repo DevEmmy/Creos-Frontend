@@ -3,6 +3,7 @@
 import { primaryColor } from '@/app/theme';
 import { Box, Button, Flex, Grid, Text } from '@chakra-ui/react';
 import React from 'react'
+import MyButton from './MyButton';
 
 const Tools = () => {
     const tools = [
@@ -46,14 +47,12 @@ const Tools = () => {
                                     <Text>{tool.desc1}</Text>
                                     <Text>{tool.desc2}</Text>
                                 </Flex>
-                                <Flex gap={"20px"} flexDir={{base: "column", lg: "row"}}>
-                                    <Button width={"fit-content"} border={"1px solid"} color={"white"} background={primaryColor} padding={"20px 30px"}>
-                                        {tool.buttonText}
-                                    </Button>
-
-                                    <Button width={"fit-content"} border={"1px solid"} color={primaryColor} background={"transparent"} padding={"20px 30px"}>
+                                <Flex gap={"10px"} flexDir={{base: "column", lg: "row"}}>
+                                    <MyButton width={"fit-content"} border={"1px solid"} color={"white"} background={primaryColor} padding={{lg:"16px 52px", base: "12px 36px"}} text={tool.buttonText}/>
+                                        
+                                    <MyButton width={"fit-content"} border={"1px solid"} color={primaryColor} background={"transparent"} padding={{lg:"16px 52px", base: "12px 36px"}}>
                                         Learn More
-                                    </Button>
+                                    </MyButton>
                                 </Flex>
                             </Flex>
                         )

@@ -2,7 +2,8 @@
 
 import { primaryColor } from '@/app/theme';
 import { Box, Button, Flex, Grid, Text } from '@chakra-ui/react';
-import React from 'react'
+import React from 'react';
+import MyButton from './MyButton';
 
 const Sponsorship = () => {
     const sponsors = [
@@ -41,13 +42,13 @@ const Sponsorship = () => {
                                     <Text fontSize={"14px"}>{tool.desc2}</Text>
                                 </Flex>
                                 <Flex gap={"20px"} flexDir={{base: "column", lg: "row"}}>
-                                    <Button width={"fit-content"} border={"1px solid"} color={"white"} background={primaryColor} padding={"20px 30px"}>
+                                    <MyButton width={"fit-content"} border={"1px solid"} color={"white"} background={primaryColor} padding={{lg:"16px 52px", base: "12px 36px"}}>
                                         {tool.buttonText}
-                                    </Button>
+                                    </MyButton>
 
-                                    <Button width={"fit-content"} border={"1px solid"} color={primaryColor} background={"transparent"} padding={"20px 30px"}>
+                                    <MyButton width={"fit-content"} border={"1px solid"} color={primaryColor} background={"transparent"} padding={{lg:"16px 52px", base: "12px 36px"}}>
                                         Learn More
-                                    </Button>
+                                    </MyButton>
                                 </Flex>
                             </Flex>
                         )

@@ -3,6 +3,7 @@
 import { primaryColor, secondaryColor } from '@/app/theme';
 import { Box, Button, Flex, Grid, Text } from '@chakra-ui/react';
 import React from 'react'
+import MyButton from './MyButton';
 
 const ToLearn = () => {
     const toLearn = [
@@ -57,18 +58,15 @@ const ToLearn = () => {
                                     </Flex>
                                 </Flex>
 
-                                <Button width={"fit-content"} border={"none"} background={primaryColor} padding={"15px 30px"} color={"white"} cursor={"pointer"}>
-                                    Learn More
-                                </Button>
+                                <MyButton width={"fit-content"} border={"none"} bg={primaryColor} padding={{base: "12px 36px", lg:"16px 52px"}} color={"white"} cursor={"pointer"} text="Learn More"/>
                             </Flex>
                         )
                     })
                 }
             </Grid>
-
-            <Button width={"fit-content"} border={"1px solid"} color={primaryColor} background={"transparent"} padding={"20px 30px"}>
-                View in all Category
-            </Button>
+{/* 
+            <MyButton width={"fit-content"} border={"1px solid"} color={primaryColor} background={"transparent"} padding={"20px 30px"} text="View in all Category" /> */}
+            
         </Flex>
     </>
   )

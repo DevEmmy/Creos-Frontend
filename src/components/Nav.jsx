@@ -47,7 +47,9 @@ const Nav = ({active = 0}) => {
         borderBottom={`2px solid ${secondaryColor}`}
         color={"white"}
         >
+            
             <Logo />
+            
 
             <Flex
                 justifyContent={"space-between"}
@@ -75,10 +77,12 @@ const Nav = ({active = 0}) => {
             <MenuButton
                 as={IconButton}
                 aria-label='Options'
-                icon={<RiMenu3Line />}
+                icon={<RiMenu3Line color='white' size={"24px"}/>}
                 variant='outline'
+                _hover={{"background": "none"}}
+                border={"none"}
                 display={{base: "inline-flex", md: "none", lg: "none"}}
-                background={"white"}
+                // background={"white"}
             />
             <MenuList>
                 
