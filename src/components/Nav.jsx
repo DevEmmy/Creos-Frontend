@@ -19,7 +19,7 @@ const Nav = ({active = 0}) => {
         },
         {
             title: "About Creos",
-            link: "/"
+            link: "/about"
         },
         {
             title: "Contact",
