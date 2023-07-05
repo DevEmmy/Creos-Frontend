@@ -1,9 +1,10 @@
 'use client';
 
-import { primaryColor } from '@/app/theme';
-import { Box, Button, Flex, Grid, Text } from '@chakra-ui/react';
+import { primaryColor, xMarginLarge } from '@/app/theme';
+import { Box, Button, Flex, Grid, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 import MyButton from './MyButton';
+import rec from "@/assets/rec.png"
 
 const Sponsorship = () => {
     const sponsors = [
@@ -28,25 +29,25 @@ const Sponsorship = () => {
     ]
   return (
         <>
-            <Flex flexDir={"column"} width={{lg:"80%", base: "90%"}} margin={"100px auto"} gap={"30px"}>
+            <Flex flexDir={"column"} width={{lg:"90", base: "90%"}} margin={`100px auto`} gap={"30px"}>
                 <Text textAlign={"center"} fontSize={"30px"} fontWeight={"600"}>Need funding or Scholarship</Text>
 
                 <Grid gridTemplateColumns={{base: "none", lg:"1fr 1fr 1fr"}} gap={"50px"}>
                     {sponsors.map((tool, index) => {
                         return (
                             <Flex key={index} flexDir={"column"} gap={"20px"} padding={"10px"} border={"1px solid #eee"}>
-                                <Box width="100%" height="200px" background="#eee" />
+                                <Image src={rec.src} width="100%" height="200px" background="#eee" />
                                 <Flex flexDir={"column"} gap={"10px"}>
                                     <Text fontSize={"20px"} fontWeight={"600"}>{tool.title}</Text>
                                     <Text fontSize={"14px"}>{tool.desc1}</Text>
                                     <Text fontSize={"14px"}>{tool.desc2}</Text>
                                 </Flex>
                                 <Flex gap={"20px"} flexDir={{base: "column", lg: "row"}}>
-                                    <MyButton width={"fit-content"} border={"1px solid"} color={"white"} background={primaryColor} padding={{lg:"16px 52px", base: "12px 36px"}}>
+                                    <MyButton width={"fit-content"} border={"1px solid"} color={"white"} background={primaryColor} padding={{lg:"16px 24px", base: "12px 20px"}}>
                                         {tool.buttonText}
                                     </MyButton>
 
-                                    <MyButton width={"fit-content"} border={"1px solid"} color={primaryColor} background={"transparent"} padding={{lg:"16px 52px", base: "12px 36px"}}>
+                                    <MyButton width={"fit-content"} border={"1px solid"} color={primaryColor} background={"transparent"} padding={{lg:"16px 36px", base: "12px 36px"}}>
                                         Learn More
                                     </MyButton>
                                 </Flex>

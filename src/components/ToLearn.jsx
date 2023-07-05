@@ -1,26 +1,32 @@
 "use client";
 
 import { primaryColor, secondaryColor } from '@/app/theme';
-import { Box, Button, Flex, Grid, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Grid, Image, Text } from '@chakra-ui/react';
 import React from 'react'
 import MyButton from './MyButton';
+import animation from "@/assets/animation.png";
+import gameDev from "@/assets/gameDev.png"
+import nft from "@/assets/nft.png";
 
 const ToLearn = () => {
     const toLearn = [
         {
             title: "3D Art and Animation",
             price: "70",
-            deadline: "Closing Soon"
+            deadline: "Closing Soon",
+            imgUrl: animation
         },
         {
             title: "3D Game Development",
             price: "30",
-            deadline: "Closing Soon"
+            deadline: "Closing Soon",
+            imgUrl: gameDev
         },
         {
             title: "NFT Design",
             price: "89",
-            deadline: "Closing Soon"
+            deadline: "Closing Soon",
+            imgUrl: nft
         }
     ]
   return (
@@ -35,24 +41,25 @@ const ToLearn = () => {
                     toLearn.map((item, i)=>{
                         return(
                             <Flex key={i} border={"1px solid #eee"} flexDir={"column"} padding={"10px"}>
-                                <Box width="100%" height="200px" background="#eee"/>
+                                {/* <Box width="100%" height="200px" background="#eee"/> */}
+                                <Image src={item.imgUrl.src} alt={item.title} width="100%" height="200px" />
 
-                                <Text fontSize={"20px"} padding={"10px 0"}>{item.title}</Text>
+                                <Text fontSize={{base: "24px", lg:"30px"}} padding={"10px 0"}>{item.title}</Text>
                                 <Grid  gridTemplateColumns={"repeat(3, 1fr)"} fontSize={"14px"}>
                                     <Text>Metaverse</Text>
                                     <Text>Remote</Text>
                                     <Text>Beginner</Text>
                                 </Grid>
-                                <Flex py={"10px"} justifyContent={"space-between"} fontSize={"14px"}>
+                                <Flex py={"10px"} justifyContent={"space-between"} fontSize={{base:"16px", lg:"16px"}} alignItems={"center"}>
                                     <Text>
                                         Deadline: {item.deadline}
                                     </Text>
 
-                                    <Flex >
+                                    <Flex fontWeight={600}>
                                         <Text fontSize={"10px"}>
                                             $
                                         </Text>
-                                        <Text fontSize={"20px"}>
+                                        <Text fontSize={{base: "24px", lg:"24px"}}>
                                             {item.price}
                                         </Text>
                                     </Flex>

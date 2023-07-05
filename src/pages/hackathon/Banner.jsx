@@ -1,6 +1,7 @@
 'use client';
 
-import { primaryColor, secondaryColor } from '@/app/theme'
+import { primaryColor, secondaryColor, size16, size20, size24, xMarginLarge } from '@/app/theme'
+import MyButton from '@/components/MyButton';
 import { Button, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
 
@@ -9,40 +10,41 @@ const Banner = () => {
     <>
         <Flex 
             background={primaryColor}
-            align={"center"}
+            align={{base: "start", lg:"center"}}
             justify={"center"}
             flexDir={"column"}
             height={{base: "70vh" ,lg:"90vh"}}
-            px={{base: "5%", lg:"20%"}}
-            lineHeight={"1"}
+            px={{base: "5%", lg:xMarginLarge}}
+            // lineHeight={"1"}
             gap={"20px"}
         >
             <Text
                 color={"white"}
-                fontSize={{base: "35px", lg:"50px"}}
-                fontWeight={"600"}
-                textAlign={"center"}
+                fontSize={{base: "32px", lg:"50px"}}
+                fontWeight={"700"}
+                textAlign={{base:"start", lg:"center"}}
             >Pioneering Sustainable Solutions for a Better Future</Text>
             <Text color={"white"}
-                    fontSize={{base: "14px", lg:"18px"}}
-                    textAlign={"center"}
+                    fontSize={{base: "14px", lg:size24}}
+                    textAlign={{base:"start", lg:"center"}}
             >
                 Join us for the groundbreaking event of the year, Creos Hackathon, where creators, innovators, and visionaries unite to shape a sustainable future aligned with the United Nations&apos; Sustainable Development Goals. 
             </Text>
             <Text 
                 color={"white"}
-                fontSize={{base: "14px", lg:"18px"}}
-                textAlign={"center"}
+                fontSize={{base: "14px", lg:size24}}
+                textAlign={{base:"start", lg:"center"}}
             >
                 Prepare to be immersed in a whirlwind of cutting-edge technologies, collaborative problem-solving, and the thrill of bringing game-changing ideas to life.</Text>
 
                 <Flex
                     alignItems={"center"}
+                    flexDir={{"base": "column", lg: "row"}}
                     justifyContent={"center"}
-                    gap={"30px"}
+                    gap={"10px"}
                 >
-                    <Button background={secondaryColor} color={"black"} border={"none"} padding={"20px 30px"} fontSize={"14px"}>Purchase ID</Button>
-                    <Button background={primaryColor} border={`1px solid ${secondaryColor}`} color={secondaryColor} padding={"20px 30px"} fontSize={"14px"}>Get Tickets</Button>
+                    <MyButton background={secondaryColor} color={"black"} border={"none"} padding={{base: "12px 36px", lg:"24px 52px"}} fontSize={{base: size16 ,lg:size20}}>Purchase ID</MyButton>
+                    <MyButton background={primaryColor} border={`1px solid ${secondaryColor}`} color={secondaryColor} padding={{base: "12px 36px", lg:"24px 52px"}} fontSize={{base: size16 ,lg:size20}}>Get Tickets</MyButton>
                 </Flex>
             
         </Flex>

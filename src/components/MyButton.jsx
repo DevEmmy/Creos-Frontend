@@ -1,7 +1,7 @@
 import { Button, Text } from '@chakra-ui/react'
 import React from 'react'
 
-const MyButton = ({text, background, callBack, padding="24px 52px", borderRadius, bg, color, fontSize, border, width="fit-content", children}) => {
+const MyButton = ({text, background, callBack, padding="24px 52px", borderRadius, bg, color, fontSize, border, width="fit-content", children, margin}) => {
   return (
     <Button 
         variant={"unstyled"}
@@ -13,6 +13,7 @@ const MyButton = ({text, background, callBack, padding="24px 52px", borderRadius
         fontSize={fontSize}
         width={width}
         height={"auto"}
+        margin={margin}
     >
         <Text padding={padding}>
             {children || text}

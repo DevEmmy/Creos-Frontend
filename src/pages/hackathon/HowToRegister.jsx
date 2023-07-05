@@ -3,6 +3,7 @@
 import { Button, Flex, Grid, Text } from '@chakra-ui/react';
 import React from 'react'
 import { primaryColor } from '@/app/theme';
+import MyButton from '@/components/MyButton';
 
 const HowToRegister = () => {
   return (
@@ -21,20 +22,20 @@ const HowToRegister = () => {
                             With Creos ID, you gain access to unparalleled opportunities and become part of an exclusive community of verified top 1% achievers.
                         </Text>
 
-                        <Button width={'fit-content'} background={primaryColor} color={"white"} border={0} padding={"10px 20px"}>
+                        <MyButton width={'fit-content'} background={primaryColor} color={"white"} border={0} padding={{base: "12px 36px", lg:"24px 56px"}}>
                             Purchase ID
-                        </Button>
+                        </MyButton>
                     </Flex>
-                    <Grid gridTemplateColumns={"repeat(2, 1fr)"} gap="20px">
+                    <Grid gridTemplateColumns={{base: "none", lg:"repeat(2, 1fr)"}} gap="20px">
                         <Flex
                          padding={"10px"} border={"1px solid #eee"} flexDir={"column"} gap={"10px"}>
                             <Text>
                                 Fill in the form here with your Creos ID reference details and join the Telegram community group link after submitting the form.
                             </Text>
 
-                            <Button width={'fit-content'} background={primaryColor} color={"white"} border={0} padding={"10px 20px"}>
+                            <MyButton width={'fit-content'} background={primaryColor} color={"white"} border={0} padding={{base: "12px 36px", lg:"24px 56px"}}>
                                 Fill Form
-                            </Button>
+                            </MyButton>
                         </Flex>
 
                         <Flex
@@ -43,9 +44,9 @@ const HowToRegister = () => {
                             Get our custom DP for free and post on twitter tagging @creoshackathon with hashtag to be featured and officially onboard.
                             </Text>
 
-                            <Button width={'fit-content'} background={primaryColor} color={"white"} border={0} padding={"10px 20px"}>
+                            <MyButton width={'fit-content'} background={primaryColor} color={"white"} border={0} padding={{base: "12px 36px", lg:"24px 56px"}}>
                                 Get DP
-                            </Button>
+                            </MyButton>
                         </Flex>
                     </Grid>
                     

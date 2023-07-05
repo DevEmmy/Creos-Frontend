@@ -1,4 +1,5 @@
 'use client';
+import { size16, size18, size20, size24, size32 } from '@/app/theme';
 import { Flex, Grid, Text } from '@chakra-ui/react';
 import React from 'react'
 
@@ -44,17 +45,18 @@ const Technologoes = () => {
     ]
   return (
     <>
-        <Flex flexDir={"column"} background={"#F3F3F3"} padding={{base: "60px 5%", lg:"100px 10%"}} align={"center"} justify={"client"}>
-            <Text color={"#2B4E43"} fontSize={"16px"}>Unlock the Potential of Technologies:</Text>
-            <Text color={"#333333"} textAlign={"center"} fontSize={{base:"20px", lg: "30px"}} fontWeight={"600"}>During Creos Hackathon, participants have the opportunity to explore and harness the potential of the following technologies:</Text>
+        <Flex flexDir={"column"} background={"#F3F3F3"} padding={{base: "60px 5%", lg:"100px 10%"}} align={{base: "start", lg:"center"}}>
+            <Text color={"#2B4E43"} fontSize={{base:size16 ,lg:size24}}>Unlock the Potential of Technologies:</Text>
+            <Text color={"#333333"} textAlign={{base: "start", lg:"center"}} fontSize={{base: size20, lg: size32}} fontWeight={"600"}>During Creos Hackathon, participants have the opportunity to explore and harness the potential of the following technologies:</Text>
 
-            <Grid gridTemplateColumns={{base: "none", lg:"repeat(3, 1fr)"}} gap={"50px"} padding={"30px"}>
+            <Grid gridTemplateColumns={{base: "none", lg:"repeat(3, 1fr)"}} gap={"50px"} padding={{base: "30px 0", lg:"30px"}}>
                 {
                     details.map((item, index)=>{
                         return(
                             <Flex key={index} flexDir={"column"} color={"#333333"} gap="10px">
-                                <Text fontSize={"16px"} fontWeight={"600"} textAlign={"center"}>{item.title}</Text>
-                                <Text fontSize={"12px"} textAlign={"center"}>{item.description}</Text>
+                                <Text fontSize={{base: size20, lg: size24}} fontWeight={"600"} textAlign={{base: "start", lg:"center"}}>{item.title}</Text>
+
+                                <Text fontSize={{base: size16, lg: size18}} textAlign={{base: "start", lg:"center"}}>{item.description}</Text>
                             </Flex>
                         )
                     })

@@ -2,6 +2,7 @@
 import { primaryColor } from '@/app/theme'
 import { Button, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
+import MyButton from './MyButton'
 
 const BottomBanner1 = () => {
   return (
@@ -11,9 +12,9 @@ const BottomBanner1 = () => {
             Stay tuned for more details and be prepared to embark on an unforgettable journey of creativity, collaboration, and celebration. See you at Creos Geek Out!
             </Text>
 
-            <Button background={primaryColor} color={"white"} padding={"20px 30px"} fontSize={"14px"} width={"fit-content"} border={"none"} margin={"20px 0"}>
+            <MyButton background={primaryColor} color={"white"} padding={{base: "12px 36px", lg:"24px 52px"}} fontSize={"14px"} width={"fit-content"} border={"none"} margin={"20px 0"}>
                 Get Ticket
-            </Button>
+            </MyButton>
         </Flex>
     </>
   )
