@@ -11,6 +11,7 @@ import Sponsorship from './Sponsorship';
 import NewsLetter from './NewsLetter';
 import MyButton from './MyButton';
 import image from '@/assets/homepage-banner-image.png'
+import Events from './Events';
 
 const Homepage = () => {
   return (
@@ -31,6 +32,7 @@ const Homepage = () => {
         </Grid>
         
         <ToLearn />
+        <Events />
         <Tools />
         <Sponsorship />
         <NewsLetter />
