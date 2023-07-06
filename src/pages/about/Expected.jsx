@@ -27,11 +27,11 @@ const Expected = () => {
                     </Text>
 
                     <Text>
-                    More reasons? Emerging technologies such as artificial intelligence and robotics will help businesses save the cost of certain jobs recruiting as Artificial intelligence is early believed to best automate jobs and deliver faster than humans. As much as we don't believe they replace us but rather assist humans with work, this is only possible when humans pick on harnessing potentials that enable us to collaborate with them on more important goals and missions assigned.
+                    More reasons? Emerging technologies such as artificial intelligence and robotics will help businesses save the cost of certain jobs recruiting as Artificial intelligence is early believed to best automate jobs and deliver faster than humans. As much as we don&apos;t believe they replace us but rather assist humans with work, this is only possible when humans pick on harnessing potentials that enable us to collaborate with them on more important goals and missions assigned.
                     </Text>
 
                     <Text>
-                    Another thought would be, what are these possible potentials or skills? At Creos, we spend adequate time with artificial intelligence studying and researching what's next. As we keep base on our major focus to empower creators and non-creators for the present and the future. Our research has enabled us to recognize current skills that will still be relevant even in the age of AI & robotics technology and discover new skills that would be in demand at this age.
+                    Another thought would be, what are these possible potentials or skills? At Creos, we spend adequate time with artificial intelligence studying and researching what&apos;s next. As we keep base on our major focus to empower creators and non-creators for the present and the future. Our research has enabled us to recognize current skills that will still be relevant even in the age of AI & robotics technology and discover new skills that would be in demand at this age.
                     </Text>
                 </Flex>
 
