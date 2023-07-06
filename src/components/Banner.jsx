@@ -13,8 +13,9 @@ const Banner = () => {
             align={{base: "start", lg:"center"}}
             justify={"center"}
             flexDir={"column"}
-            height={{base: "70vh" ,lg:"98vh"}}
+            // height={{base: "70vh" ,lg:"98vh"}}
             px={{base: "5%", lg:"22%"}}
+            py={{base: "80px", lg: "120px"}}
             // lineHeight={"1"}
             gap={"20px"}
         >
