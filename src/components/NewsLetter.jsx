@@ -7,7 +7,7 @@ import React from 'react'
 const NewsLetter = () => {
   return (
     <>
-        <Flex flexDir={"column"} width={"80%"} margin={"100px auto"} color={"#444444"} gap={"10px"} align={"center"} justify={"center"}>
+        <Flex flexDir={"column"} width={"80%"} margin={{lg:"100px auto", base: "60px auto"}} color={"#444444"} gap={"10px"} align={"center"} justify={"center"}>
             <Text fontSize={"30px"} fontWeight={"600"}>Join Our Newsletter</Text>
             <Text fontSize={"16px"}>Stay up to date with the hottest Creators tool and news</Text>
             <InputGroup width={{lg:"60%", base: "90%"}} flexDir={{base:"column", lg: "row"}} gap={{base: "10px", lg: "0"}}>

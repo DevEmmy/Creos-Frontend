@@ -1,5 +1,6 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
+import { dBtnPadding, primaryColor, secondaryColor, size16, size18, size20, size24, size32, xMarginLarge } from '@/app/theme'
 
 const Expected = () => {
   return (
@@ -11,10 +12,12 @@ const Expected = () => {
             >
                 <Flex
                     flexDir={"column"}
-                    width={"70%"}
+                    width={{lg:"70%", base: "100%"}}
+                    gap={"10px"}
                 >
                     <Text
-
+                        fontSize={{base: size24, lg: size32}}
+                        fontWeight="600"
                     >
                         Why should we expect these scary statics?
                     </Text>
