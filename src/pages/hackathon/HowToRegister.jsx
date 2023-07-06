@@ -2,7 +2,7 @@
 
 import { Button, Flex, Grid, Text } from '@chakra-ui/react';
 import React from 'react'
-import { primaryColor } from '@/app/theme';
+import { dBtnPadding, primaryColor } from '@/app/theme';
 import MyButton from '@/components/MyButton';
 
 const HowToRegister = () => {
@@ -22,7 +22,7 @@ const HowToRegister = () => {
                             With Creos ID, you gain access to unparalleled opportunities and become part of an exclusive community of verified top 1% achievers.
                         </Text>
 
-                        <MyButton width={'fit-content'} background={primaryColor} color={"white"} border={0} padding={{base: "12px 36px", lg:"24px 56px"}}>
+                        <MyButton width={'fit-content'} background={primaryColor} color={"white"} border={0} padding={{base: "12px 36px", lg:dBtnPadding}} >
                             Purchase ID
                         </MyButton>
                     </Flex>
@@ -33,7 +33,7 @@ const HowToRegister = () => {
                                 Fill in the form here with your Creos ID reference details and join the Telegram community group link after submitting the form.
                             </Text>
 
-                            <MyButton width={'fit-content'} background={primaryColor} color={"white"} border={0} padding={{base: "12px 36px", lg:"24px 56px"}}>
+                            <MyButton width={'fit-content'} background={primaryColor} color={"white"} border={0} padding={{base: "12px 36px", lg:dBtnPadding}}>
                                 Fill Form
                             </MyButton>
                         </Flex>
@@ -44,7 +44,7 @@ const HowToRegister = () => {
                             Get our custom DP for free and post on twitter tagging @creoshackathon with hashtag to be featured and officially onboard.
                             </Text>
 
-                            <MyButton width={'fit-content'} background={primaryColor} color={"white"} border={0} padding={{base: "12px 36px", lg:"24px 56px"}}>
+                            <MyButton width={'fit-content'} background={primaryColor} color={"white"} border={0} padding={{base: "12px 36px", lg: dBtnPadding}}>
                                 Get DP
                             </MyButton>
                         </Flex>

@@ -4,9 +4,12 @@ import { primaryColor, secondaryColor } from '@/app/theme';
 import { Box, Button, Flex, Grid, Image, Text } from '@chakra-ui/react';
 import React from 'react'
 import MyButton from './MyButton';
-import animation from "@/assets/animation.png";
-import gameDev from "@/assets/gameDev.png"
-import nft from "@/assets/nft.png";
+import animation from "@/assets/animation.jpg";
+import gameDev from "@/assets/gameDev.jpg"
+import nft from "@/assets/nft.jpg";
+import shapePlus from "@/assets/shape-plus.png";
+import carbonLevel from "@/assets/carbon_skill-level-basic.png"
+import castEducation from "@/assets/cast-education.png"
 
 const ToLearn = () => {
     const toLearn = [
@@ -46,9 +49,21 @@ const ToLearn = () => {
 
                                 <Text fontSize={{base: "24px", lg:"30px"}} padding={"10px 0"}>{item.title}</Text>
                                 <Grid  gridTemplateColumns={"repeat(3, 1fr)"} fontSize={"14px"}>
-                                    <Text>Metaverse</Text>
-                                    <Text>Remote</Text>
-                                    <Text>Beginner</Text>
+                                    <Flex alignItems={"center"} gap="1px">
+                                        <Image src={shapePlus.src} alt="icon" width="14px" height={"14px"}/>
+                                        <Text>Metaverse</Text>
+                                    </Flex>
+
+                                    <Flex alignItems={"center"} gap="1px">
+                                        <Image src={carbonLevel.src} alt="icon" width="14px" height={"14px"}/>
+                                        <Text>Remote</Text>
+                                    </Flex>
+
+                                    <Flex alignItems={"center"} gap="1px">
+                                        <Image src={castEducation.src} alt="icon" width="14px" height={"14px"}/>
+                                        <Text>Beginner</Text>
+                                    </Flex>
+                                    
                                 </Grid>
                                 <Flex py={"10px"} justifyContent={"space-between"} fontSize={{base:"16px", lg:"16px"}} alignItems={"center"}>
                                     <Text>

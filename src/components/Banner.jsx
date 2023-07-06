@@ -1,6 +1,6 @@
 'use client';
 
-import { primaryColor, secondaryColor, size16, size20 } from '@/app/theme'
+import { dBtnPadding, primaryColor, secondaryColor, size16, size20, size40 } from '@/app/theme'
 import { Button, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
 import MyButton from './MyButton';
@@ -21,7 +21,7 @@ const Banner = () => {
         >
             <Text
                 color={"white"}
-                fontSize={{base: "32px", lg:"50px"}}
+                fontSize={{base: "32px", lg:size40}}
                 textAlign={{base: "start", lg:"center"}}
                 fontWeight={"600"}
             >Your Inner Geek with the Future!</Text>
@@ -35,7 +35,7 @@ const Banner = () => {
                 textAlign={{base: "start", lg:"center"}}
             >
                 At Creos Geek Out, we believe that your network holds the key to unlocking endless opportunities and success. It&apos;s the perfect platform to foster collaboration, meet potential partners, connect with customers, and so much more.</Text>
-            <MyButton background={secondaryColor} color={"black"} border={"none"} padding={{base: "12px 36px", lg:"24px 52px"}} fontSize={{base: size16 ,lg:size20}}>Get Tickets</MyButton>
+            <MyButton background={secondaryColor} color={"black"} border={"none"} padding={{base: "12px 36px", lg:dBtnPadding}} fontSize={{base: size16 ,lg:size20}}>Get Tickets</MyButton>
         </Flex>
     </>
   )

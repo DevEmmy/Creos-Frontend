@@ -1,7 +1,7 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
 import MyButton from './MyButton'
-import { primaryColor, secondaryColor, size18, size24, size32, size40, xMarginLarge } from '@/app/theme'
+import { dBtnPadding, primaryColor, secondaryColor, size18, size20, size24, size32, size40, xMarginLarge } from '@/app/theme'
 
 const Events = () => {
     const events = [
@@ -45,18 +45,18 @@ const Events = () => {
                             gap={"10px"}
                         >
                             <Text color={secondaryColor} fontSize={{lg: size32, base: size24}} fontWeight={600}>{event.title}</Text>
-                            <Text fontSize={{base: size18, lg: size24}}>{event.desc1}</Text>
-                            <Text fontSize={{base: size18, lg: size24}}>{event.desc2}</Text>
+                            <Text fontSize={{base: size18, lg: size20}}>{event.desc1}</Text>
+                            <Text fontSize={{base: size18, lg: size20}}>{event.desc2}</Text>
 
                             <Flex flexDir={{base: "column", lg: "row"}} gap={"10px"}>
                                 <MyButton
                                     background={secondaryColor}
                                     color={"black"}
-                                    padding={{base:'12px 36px', lg:'24px 52px'}}
+                                    padding={{base:'12px 36px', lg:dBtnPadding}}
                                 >
                                     Get Tickets
                                 </MyButton>
-                                <MyButton color={secondaryColor} border={"1px solid"}  padding={{base:'12px 36px', lg:'24px 52px'}}>
+                                <MyButton color={secondaryColor} border={"1px solid"}  padding={{base:'12px 36px', lg:dBtnPadding}}>
                                     {"Join" + " " + event.title}
                                 </MyButton>
                             </Flex>

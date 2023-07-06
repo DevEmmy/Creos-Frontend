@@ -41,7 +41,7 @@ const Socials = () => {
     ]
   return (
     <>
-        <Flex gap="20px" background={"#FFF"} align={"center"} padding={{base: "50px 10px", lg:"100px 20%"}} justifyContent={"center"} flexDir={"column"} lineHeight={"1"}>
+        <Flex gap="20px" background={"#FFF"} align={"center"} padding={{base: "50px 10px", lg:"100px 20%"}} justifyContent={"center"} flexDir={"column"}>
             <Text textAlign={"center"} fontSize={{base: "20px", lg:"30px"}} fontWeight="600" color={primaryColor}>Connect with us today and be part of the vibrant Creos Greek Out community!</Text>
             <Text color={"#333333"} textAlign={"center"} fontSize={{base: "14px", lg:"18px"}}>Join us on social media to stay updated with the latest activities, inspiring success stories, and engaging community discussions.</Text>
 

@@ -1,5 +1,3 @@
-'use client';
-
 import { dBtnPadding, primaryColor, secondaryColor, size16, size18, size20, size24, size40, xMarginLarge } from '@/app/theme'
 import MyButton from '@/components/MyButton';
 import { Button, Flex, Text } from '@chakra-ui/react'
@@ -24,21 +22,23 @@ const Banner = () => {
                 fontSize={{base: "32px", lg: size40}}
                 fontWeight={"700"}
                 textAlign={{base:"start", lg:"center"}}
-            >Pioneering Sustainable Solutions for a Better Future</Text>
+            >
+                About Creos 
+            </Text>
             <Text color={"white"}
                     fontSize={{base: "14px", lg:size20}}
                     textAlign={{base:"start", lg:"center"}}
             >
-                Join us for the groundbreaking event of the year, Creos Hackathon, where creators, innovators, and visionaries unite to shape a sustainable future aligned with the United Nations&apos; Sustainable Development Goals. 
+                Creos “a Spanish word” mean Creators “in English” and our story began a minute in the year 2418 when we realized the future demand of the workforce. 
             </Text>
             <Text 
                 color={"white"}
                 fontSize={{base: "14px", lg:size20}}
                 textAlign={{base:"start", lg:"center"}}
             >
-                Prepare to be immersed in a whirlwind of cutting-edge technologies, collaborative problem-solving, and the thrill of bringing game-changing ideas to life.</Text>
+                By 2025, there will be a shortage of 85.2 million skilled workers globally, representing a massive opportunity for companies like Creos to keep Africa and the planet awake and prepared for the future said (Korn Ferry, 2018).</Text>
 
-                <Flex
+                {/* <Flex
                     alignItems={"center"}
                     flexDir={{"base": "column", lg: "row"}}
                     justifyContent={"center"}
@@ -47,7 +47,7 @@ const Banner = () => {
                     <MyButton background={secondaryColor} color={"black"} border={"none"} padding={{base: "12px 36px", lg: dBtnPadding}} fontSize={{base: size16 ,lg:size18}}>Purchase ID</MyButton>
                     <MyButton background={primaryColor} border={`1px solid ${secondaryColor}`} color={secondaryColor} padding={{base: "12px 36px", lg:dBtnPadding}} fontSize={{base: size16 ,lg:size18}}>Get Tickets</MyButton>
                 </Flex>
-            
+             */}
         </Flex>
     </>
   )

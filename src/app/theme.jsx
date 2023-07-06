@@ -10,3 +10,5 @@ export const size18 = "18px";
 export const size16 = "16px";
 
 export const xMarginLarge = "120px"
+
+export const dBtnPadding = "14px 28px"
