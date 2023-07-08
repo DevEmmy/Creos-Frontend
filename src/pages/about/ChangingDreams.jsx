@@ -1,4 +1,4 @@
-import { primaryColor, secondaryColor, size20, size24, size32, size40 } from '@/app/theme'
+import { gap, primaryColor, secondaryColor, size20, size24, size32, size40 } from '@/app/theme'
 import { Box, Flex, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 import check from "@/assets/Vector.png"
@@ -14,8 +14,9 @@ const ChangingDreams = () => {
     <Flex
         background={primaryColor} 
         flexDir={{base: "column", lg: "row"}}
-        padding={{base: "70px 5%", lg: "100px 10%"}}
+        padding={{base: "70px 5%", lg: `100px ${gap}`}}
         gap="20px"
+        alignItems={"center"}
     >
         <Flex
             flexDir={"column"}

@@ -12,3 +12,7 @@ export const size16 = "16px";
 export const xMarginLarge = "120px"
 
 export const dBtnPadding = "14px 28px"
+
+export const bannerWidth = "62%";
+export const desktopGap = "100px";
+export const gap = "6.4%";

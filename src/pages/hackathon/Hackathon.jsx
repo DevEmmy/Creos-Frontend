@@ -8,6 +8,7 @@ import Socials from '@/components/Socials'
 import People from '@/components/People'
 import Prizes from './Prizes'
 import HowToRegister from './HowToRegister'
+import WhyCreosHackathon from './WhyCreosHackathon'
 
 const Hackathon = () => {
   const judges = {
@@ -64,6 +65,7 @@ const Hackathon = () => {
         <HowToRegister />
         <People {...judges}/>
         <People {...mentors} />
+        <WhyCreosHackathon />
         <Socials />
         <Footer />
     </>

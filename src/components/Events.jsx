@@ -1,7 +1,7 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
 import MyButton from './MyButton'
-import { dBtnPadding, primaryColor, secondaryColor, size18, size20, size24, size32, size40, xMarginLarge } from '@/app/theme'
+import { dBtnPadding, gap, primaryColor, secondaryColor, size18, size20, size24, size32, size40, xMarginLarge } from '@/app/theme'
 
 const Events = () => {
     const events = [
@@ -24,7 +24,7 @@ const Events = () => {
             background={"#E8E8E8"}
             flexDir={"column"}
             gap={"30px"}
-            padding={{base: "60px 5%", lg: `{100px ${xMarginLarge}}`}}
+            padding={{base: "60px 5%", lg: `100px ${gap}`}}
         >
             <Text
                 textAlign={"center"}
@@ -40,11 +40,11 @@ const Events = () => {
                             key={index}
                             flexDir={"column"}
                             background={primaryColor}
-                            padding={{base: "20px", lg:"50px"}}
+                            padding={{base: "20px", lg:"4.6%"}}
                             color={"white"}
-                            gap={"10px"}
+                            gap={"30px"}
                         >
-                            <Text color={secondaryColor} fontSize={{lg: size32, base: size24}} fontWeight={600}>{event.title}</Text>
+                            <Text py={0} color={secondaryColor} fontSize={{lg: size32, base: size24}} fontWeight={600}>{event.title}</Text>
                             <Text fontSize={{base: size18, lg: size20}}>{event.desc1}</Text>
                             <Text fontSize={{base: size18, lg: size20}}>{event.desc2}</Text>
 

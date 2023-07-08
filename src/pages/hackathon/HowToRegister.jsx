@@ -8,7 +8,7 @@ import MyButton from '@/components/MyButton';
 const HowToRegister = () => {
   return (
     <>
-        <Flex flexDir={"column"} width={{base: "90%", lg:"80%"}} margin={"50px auto"} gap="30px">
+        <Flex flexDir={"column"} width={{base: "90%", lg:"86.11%"}} margin={"50px auto"} gap="30px">
             <Text textAlign={"center"} fontSize={"30px"} fontWeight={"600"}>
                 How To register in three steps.
             </Text>
@@ -28,7 +28,7 @@ const HowToRegister = () => {
                     </Flex>
                     <Grid gridTemplateColumns={{base: "none", lg:"repeat(2, 1fr)"}} gap="20px">
                         <Flex
-                         padding={"10px"} border={"1px solid #eee"} flexDir={"column"} gap={"10px"}>
+                         padding={"10px"} border={"1px solid #eee"} flexDir={"column"} gap={"10px"} justifyContent={"center"}>
                             <Text>
                                 Fill in the form here with your Creos ID reference details and join the Telegram community group link after submitting the form.
                             </Text>
@@ -39,7 +39,7 @@ const HowToRegister = () => {
                         </Flex>
 
                         <Flex
-                         padding={"10px"} border={"1px solid #eee"} flexDir={"column"} gap={"10px"}>
+                         padding={"10px"} border={"1px solid #eee"} flexDir={"column"} gap={"10px"} justifyContent={"center"}>
                             <Text>
                             Get our custom DP for free and post on twitter tagging @creoshackathon with hashtag to be featured and officially onboard.
                             </Text>

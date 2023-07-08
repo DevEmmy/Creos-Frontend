@@ -1,6 +1,6 @@
 'use client';
 
-import { primaryColor } from '@/app/theme';
+import { gap, primaryColor } from '@/app/theme';
 import { Box, Button, Flex, Grid, Image, Text } from '@chakra-ui/react';
 import React from 'react'
 import MyButton from './MyButton';
@@ -42,19 +42,22 @@ const Tools = () => {
     ]
   return (
         <>
-            <Flex flexDir={"column"} width={{lg: "80%", base: "90%"}} margin={"100px auto"} gap={"30px"}>
+            <Flex flexDir={"column"} padding={{base: "60px 5%", lg: `100px ${gap}`}} gap={"30px"}>
                 <Text textAlign={"center"} fontSize={"30px"} fontWeight={"600"}>Best Tools you need at Creos</Text>
 
                 <Grid gridTemplateColumns={{ base: "none", lg:"1fr 1fr"}} gap={"50px"}>
                     {tools.map((tool, index) => {
                         return (
-                            <Flex key={index} flexDir={"column"} gap={"20px"}>
-                                <Image src={tool.imgUrl.src} width="100%" objectFit={"cover"} height="300px" background="#eee" />
+                            <Flex key={index} height={"688"} justifyContent={"space-between"} flexDir={"column"} gap={"20px"}>
+                                <Flex flexDir={"column"} gap={"20px"}>
+                                    <Image src={tool.imgUrl.src} width="100%" objectFit={"cover"} height="300px" background="#eee" />
                                 <Flex flexDir={"column"} gap={"10px"}>
                                     <Text fontSize={"20px"} fontWeight={"600"}>{tool.title}</Text>
                                     <Text>{tool.desc1}</Text>
                                     <Text>{tool.desc2}</Text>
                                 </Flex>
+                                </Flex>
+                                
                                 <Flex gap={"10px"} flexDir={{base: "column", lg: "row"}}>
                                     <MyButton width={"fit-content"} border={"1px solid"} color={"white"} background={primaryColor} padding={{lg:"16px 52px", base: "12px 36px"}} text={tool.buttonText}/>
                                         

@@ -13,7 +13,7 @@ const Banner = () => {
             justify={"center"}
             flexDir={"column"}
             // height={{base: "70vh" ,lg:"90vh"}}
-            px={{base: "5%", lg:xMarginLarge}}
+            px={{base: "5%", lg:"19%"}}
             py={{base: "80px", lg: "120px"}}
             // lineHeight={"1"}
             gap={"20px"}

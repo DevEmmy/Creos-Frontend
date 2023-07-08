@@ -2,13 +2,13 @@
 
 import { Box, Flex, Grid, Text } from '@chakra-ui/react';
 import React from 'react'
-import { primaryColor, size16, size20, size24, size32, size40, xMarginLarge } from '@/app/theme';
+import { gap, primaryColor, size16, size20, size24, size32, size40, xMarginLarge } from '@/app/theme';
 
 const What = () => {
   return (
     <>
-        <Grid gridTemplateColumns={{base: "none", lg:"1fr 1fr"}} width={{base:"90%", lg:"auto"}} margin={{base: "80px 5%", lg:`100px ${xMarginLarge}`}} flexDir={"column-reverse"} display={{base: "flex", lg: "grid"}} gap={"20px"}>
-            <Box width={"70%"} height={"400px"} background={"black"}>
+        <Grid gridTemplateColumns={{base: "none", lg:"1fr 1fr"}} width={{base:"90%", lg:"auto"}} margin={{base: "80px 5%", lg:`100px ${gap}`}} flexDir={"column-reverse"} display={{base: "flex", lg: "grid"}} gap={"100px"} alignItems={"center"}>
+            <Box width={"100%"} height={"400px"} background={"black"}>
 
             </Box>
 

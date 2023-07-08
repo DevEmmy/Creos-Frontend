@@ -47,7 +47,10 @@ const ToLearn = () => {
                                 {/* <Box width="100%" height="200px" background="#eee"/> */}
                                 <Image src={item.imgUrl.src} alt={item.title} width="100%" height="200px" />
 
-                                <Text fontSize={{base: "24px", lg:"30px"}} padding={"10px 0"}>{item.title}</Text>
+                                <Text fontSize={{base: "20px", lg:"24px"}} 
+                                fontWeight={"600"}
+                                noOfLines={1}
+                                padding={"10px 0"}>{item.title}</Text>
                                 <Grid  gridTemplateColumns={"repeat(3, 1fr)"} fontSize={"14px"}>
                                     <Flex alignItems={"center"} gap="1px">
                                         <Image src={shapePlus.src} alt="icon" width="14px" height={"14px"}/>

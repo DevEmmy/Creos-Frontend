@@ -22,7 +22,7 @@ const Nav = ({active = 0}) => {
             link: "/about"
         },
         {
-            title: "Contact",
+            title: "Courses",
             link: "/"
         },
         {

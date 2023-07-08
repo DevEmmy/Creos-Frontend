@@ -1,7 +1,7 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 import check from "@/assets/check-circle-outline.png";
-import { size24, size32 } from '@/app/theme';
+import { gap, size24, size32 } from '@/app/theme';
 
 const Purpose = () => {
     const purposes = [
@@ -12,8 +12,8 @@ const Purpose = () => {
   return (
     <Flex 
             flexDir={{base: "column-reverse", lg: "row-reverse"}}
-            margin={{base: "70px 5%", lg: `100px 10%`}}
-            gap={"20px"}
+            margin={{base: "70px 5%", lg: `100px 13.65%`}}
+            gap={"100px"}
             >
                 <Flex
                     flexDir={"column"}

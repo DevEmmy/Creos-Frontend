@@ -1,14 +1,15 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
-import { dBtnPadding, primaryColor, secondaryColor, size16, size18, size20, size24, size32, xMarginLarge } from '@/app/theme'
+import { dBtnPadding, gap, primaryColor, secondaryColor, size16, size18, size20, size24, size32, xMarginLarge } from '@/app/theme'
 
 const Expected = () => {
   return (
     <>
         <Flex 
             flexDir={{base: "column-reverse", lg: "row"}}
-            margin={{base: "70px 5%", lg: `100px 10%`}}
-            gap={"20px"}
+            margin={{base: "70px 5%", lg: `100px ${gap}`}}
+            gap={"100px"}
+            alignItems={"center"}
             >
                 <Flex
                     flexDir={"column"}
@@ -35,7 +36,7 @@ const Expected = () => {
                     </Text>
                 </Flex>
 
-                <Box width={"80%"} height={"300px"} background={"black"} />
+                <Box width={"80%"} height={"500px"} background={"black"} />
             
         </Flex>
     
