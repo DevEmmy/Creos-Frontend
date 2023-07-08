@@ -48,7 +48,7 @@ const Tools = () => {
                 <Grid gridTemplateColumns={{ base: "none", lg:"1fr 1fr"}} gap={"50px"}>
                     {tools.map((tool, index) => {
                         return (
-                            <Flex key={index} height={"688"} justifyContent={"space-between"} flexDir={"column"} gap={"20px"}>
+                            <Flex key={index} height={{lg: "628px", base:"688px"}} justifyContent={"space-between"} flexDir={"column"} gap={"20px"}>
                                 <Flex flexDir={"column"} gap={"20px"}>
                                     <Image src={tool.imgUrl.src} width="100%" objectFit={"cover"} height="300px" background="#eee" />
                                 <Flex flexDir={"column"} gap={"10px"}>

@@ -35,7 +35,7 @@ const Sponsorship = () => {
                 <Grid gridTemplateColumns={{base: "none", lg:"1fr 1fr 1fr"}} gap={"50px"}>
                     {sponsors.map((tool, index) => {
                         return (
-                            <Flex key={index} flexDir={"column"} gap={"20px"} padding={"10px"} border={"1px solid #eee"}>
+                            <Flex key={index} flexDir={"column"} gap={"20px"} padding={"10px"} border={"1px solid #eee"} justifyContent="space-between">
                                 <Image src={rec.src} width="100%" height="200px" background="#eee" />
                                 <Flex flexDir={"column"} gap={"10px"}>
                                     <Text fontSize={"20px"} fontWeight={"600"}>{tool.title}</Text>
