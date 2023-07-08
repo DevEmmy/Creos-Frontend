@@ -47,7 +47,7 @@ const WhyCreosHackathon = () => {
 
             <Flex flexDir={"column"} gap={"20px"}>
                <Text>
-               Join us for the groundbreaking event of the year, Creos Hackathon, where creators, innovators, and visionaries unite to shape a sustainable future aligned with the United Nations' Sustainable Development Goals. 
+               Join us for the groundbreaking event of the year, Creos Hackathon, where creators, innovators, and visionaries unite to shape a sustainable future aligned with the United Nations&apos; Sustainable Development Goals. 
                </Text>
 
                <Text>
