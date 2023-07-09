@@ -124,7 +124,7 @@ const Footer = () => {
                 {
                     socials.slice(0, 3).map(({icon, title, link}, index)=>{
                         return(
-                            <Link key={index} href={link} display={"flex"} alignItems={"center"} color={"white"}>
+                            <Link key={index} href={link} display={"flex"} alignItems={"center"} color={"white"} gap="5px">
                             {icon}
                             <Text display={"inline"} fontSize={{base: "16px", lg: "16px"}}>{title}</Text>
                         </Link>
@@ -141,7 +141,7 @@ const Footer = () => {
                 {
                     socials.slice(3, 6).map(({icon, title, link}, index)=>{
                         return(
-                            <Link key={index} href={link} display={"flex"} alignItems={"center"} color={"white"}>
+                            <Link key={index} href={link} display={"flex"} alignItems={"center"} gap="5px" color={"white"}>
                             {icon}
                             <Text display={"inline"} fontSize={{base: "16px", lg: "16px"}}>{title}</Text>
                         </Link>

@@ -50,7 +50,7 @@ const Socials = () => {
             <Grid gridTemplateColumns={{base: "repeat(3, 1fr)", lg:"repeat(6, 1fr)"}} gap={{base: "20px", lg:"30px"}}>
                 {socials.map(({icon, title, link}, index) => {
                     return(
-                        <Link key={index} href={link} display={"flex"} alignItems={"center"} color={primaryColor}>
+                        <Link key={index} href={link} display={"flex"} alignItems={"center"} gap="5px" color={primaryColor}>
                             {icon}
                             <Text display={"inline"} fontSize={{base: "16px", lg: "16px"}} fontWeight={600}>{title}</Text>
                         </Link>
