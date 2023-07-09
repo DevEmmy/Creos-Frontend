@@ -31,7 +31,7 @@ const Values = () => {
                 values.map((v, i)=>{
                     return(
                         <Flex key={i} alignItems={"center"} gap="4px">
-                            <Image src={check.src} alt="icon" />
+                            <Image src={check.src} alt="icon" w="30px"/>
                             <Text>{v}</Text>
                         </Flex>
                     )
@@ -48,7 +48,7 @@ const Values = () => {
                 convictions.map((v, i)=>{
                     return(
                         <Flex key={i} alignItems={"center"} gap="4px">
-                            <Image src={check.src} alt="icon" />
+                            <Image src={check.src} w="30px" alt="icon" />
                             <Text>{v}</Text>
                         </Flex>
                     )
