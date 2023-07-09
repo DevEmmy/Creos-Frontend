@@ -27,7 +27,7 @@ const People = ({title, subText, people}) => {
                 gridTemplateColumns={{base: "none", lg:"1fr 1fr 1fr 1fr"}}
             >
                 {
-                    people.map((person, index)=>{
+                    people?.map((person, index)=>{
                         return(
                             <Flex key={index} width={{base: "100%", lg:"100%"}} flexDir={"column"}>
                                 <Image src={person.image} alt={person.name} width={"100%"} height={"30%"} objectFit={"cover"} mb="10px"/>
