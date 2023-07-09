@@ -19,7 +19,7 @@ const index = () => {
         <ChangingDreams />
         <Values />
         <NewsLetter />
-        <Socials />
+        {/* <Socials /> */}
         <Footer />
     </>
   )

@@ -6,39 +6,41 @@ import React from 'react'
 import { AiFillInstagram, AiFillLinkedin, AiFillMessage, AiFillTwitterCircle } from "react-icons/ai"
 import { FaDiscord, FaInstagram, FaLinkedin, FaTelegram, FaTiktok, FaTwitter } from "react-icons/fa"
 
+export const socials = [
+    {
+        icon: <FaTwitter />,
+        title: 'Twitter',
+        link: "https://twitter.com/creosxyz"
+    },
+    {
+        icon: <FaInstagram />,
+        title: 'Instagram',
+        link: "https://www.instagram.com/creos.xyz/"
+    },
+    {
+        icon: <FaLinkedin />,
+        title: 'LinkedIn',
+        link: "https://www.linkedin.com/company/creosworkforce/"
+    },
+    {
+        icon: <FaTelegram />,
+        title: "Telegram",
+        link: "https://t.me/creosgeekout"
+    },
+    {
+        icon: <FaDiscord />,
+        title: "Discord",
+        link: "/"
+    },
+    {
+        icon: <FaTiktok />,
+        title: "TikTok",
+        link: "/"
+    }
+]
+
 const Socials = () => {
-    const socials = [
-        {
-            icon: <FaTwitter />,
-            title: 'Twitter',
-            link: "/"
-        },
-        {
-            icon: <FaInstagram />,
-            title: 'Instagram',
-            link: "/"
-        },
-        {
-            icon: <FaLinkedin />,
-            title: 'LinkedIn',
-            link: "/"
-        },
-        {
-            icon: <FaTelegram />,
-            title: "Telegram",
-            link: "/"
-        },
-        {
-            icon: <FaDiscord />,
-            title: "Discord",
-            link: "/"
-        },
-        {
-            icon: <FaTiktok />,
-            title: "TikTok",
-            link: "/"
-        }
-    ]
+    
   return (
     <>
         <Flex gap="20px" background={"#FFF"} align={"center"} padding={{base: "50px 10px", lg:"100px 20%"}} justifyContent={"center"} flexDir={"column"}>

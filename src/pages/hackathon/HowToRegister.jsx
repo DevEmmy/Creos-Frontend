@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Flex, Grid, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Grid, Text } from '@chakra-ui/react';
 import React from 'react'
 import { dBtnPadding, primaryColor } from '@/app/theme';
 import MyButton from '@/components/MyButton';
@@ -48,9 +48,13 @@ const HowToRegister = () => {
                                 Get DP
                             </MyButton>
                         </Flex>
+
+
                     </Grid>
                     
                 </Flex>
+
+                <Box width={"80%"} height={"100%"} background={"black"} />
             </Grid>
         </Flex>
     </>

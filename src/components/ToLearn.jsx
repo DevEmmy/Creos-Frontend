@@ -89,8 +89,8 @@ const ToLearn = () => {
                     })
                 }
             </Grid>
-{/* 
-            <MyButton width={"fit-content"} border={"1px solid"} color={primaryColor} background={"transparent"} padding={"20px 30px"} text="View in all Category" /> */}
+
+            <MyButton width={"fit-content"} border={"1px solid"} color={primaryColor} background={"transparent"} padding={"20px 30px"} text="View in all Category" margin={"20px auto"}/>
             
         </Flex>
     </>

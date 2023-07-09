@@ -15,12 +15,12 @@ const ChangingDreams = () => {
         background={primaryColor} 
         flexDir={{base: "column", lg: "row"}}
         padding={{base: "70px 5%", lg: `100px ${gap}`}}
-        gap="20px"
+        gap="30px"
         alignItems={"center"}
     >
         <Flex
             flexDir={"column"}
-            gap={"10px"}
+            gap={"20px"}
             width={{lg: "70%", base: "100%"}}
         >   
             <Text color={secondaryColor} fontWeight={"600"} fontSize={{base: size20, lg: size32}}>
@@ -30,8 +30,8 @@ const ChangingDreams = () => {
             {
               reasons.map((r, i)=>{
                 return(
-                  <Flex color={"white"} key={i} gap="5px" alignItems={"center"}>
-                      <Image src={check.src} alt="icon" />
+                  <Flex color={"white"} key={i} gap="8px" alignItems={"center"}>
+                      <Image width={"24px"} src={check.src} alt="icon" />
                       <Text>
                           {r}
                       </Text>
@@ -41,7 +41,7 @@ const ChangingDreams = () => {
             }
         </Flex>
 
-        <Box background={"white"} width={{lg:"70%", base: "100%"}} height={"300px"} />
+        <Box background={"white"} width={{lg:"70%", base: "100%"}} height={{base:"300px", lg: "600px"}} />
     </Flex>
   )
 }

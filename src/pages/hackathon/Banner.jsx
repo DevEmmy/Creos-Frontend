@@ -2,7 +2,8 @@
 
 import { dBtnPadding, primaryColor, secondaryColor, size16, size18, size20, size24, size40, xMarginLarge } from '@/app/theme'
 import MyButton from '@/components/MyButton';
-import { Button, Flex, Text } from '@chakra-ui/react'
+import { ticketLink } from '@/utils/data';
+import { Button, Flex, Link, Text } from '@chakra-ui/react'
 import React from 'react'
 
 const Banner = () => {
@@ -45,7 +46,13 @@ const Banner = () => {
                     gap={"10px"}
                 >
                     <MyButton background={secondaryColor} color={"black"} border={"none"} padding={{base: "12px 36px", lg: dBtnPadding}} fontSize={{base: size16 ,lg:size18}}>Purchase ID</MyButton>
-                    <MyButton background={primaryColor} border={`1px solid ${secondaryColor}`} color={secondaryColor} padding={{base: "12px 36px", lg:dBtnPadding}} fontSize={{base: size16 ,lg:size18}}>Get Tickets</MyButton>
+
+                    <Link href={ticketLink}>
+                        <MyButton background={primaryColor} border={`1px solid ${secondaryColor}`} color={secondaryColor} padding={{base: "12px 36px", lg:dBtnPadding}} fontSize={{base: size16 ,lg:size18}}>
+                            Get Tickets
+                        </MyButton>
+                    </Link>
+                    
                 </Flex>
             
         </Flex>

@@ -1,8 +1,9 @@
 "use client"
 import { dBtnPadding, primaryColor } from '@/app/theme'
-import { Button, Flex, Text } from '@chakra-ui/react'
+import { Button, Flex, Link, Text } from '@chakra-ui/react'
 import React from 'react'
 import MyButton from './MyButton'
+import { ticketLink } from '@/utils/data'
 
 const BottomBanner1 = () => {
   return (
@@ -12,9 +13,12 @@ const BottomBanner1 = () => {
             Stay tuned for more details and be prepared to embark on an unforgettable journey of creativity, collaboration, and celebration. See you at Creos Geek Out!
             </Text>
 
+          <Link href={ticketLink}>
             <MyButton background={primaryColor} color={"white"} padding={{base: "12px 36px", lg: dBtnPadding}} fontSize={"14px"} width={"fit-content"} border={"none"} margin={"20px 0"}>
-                Get Ticket
-            </MyButton>
+                  Get Ticket
+              </MyButton>
+          </Link>
+           
         </Flex>
     </>
   )

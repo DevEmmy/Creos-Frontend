@@ -7,7 +7,7 @@ const WhyCreosHackathon = () => {
   return (
     <>
     <Flex margin={{base: "80px 5%", lg:`100px ${gap}`}} gap={"100px"} flexDir={"column"}>
-         <Grid gridTemplateColumns={{base: "none", lg:"1fr 1fr"}} alignItems={"center"} gap="100px">
+         <Grid gridTemplateColumns={{base: "none", lg:"1fr 1fr"}} alignItems={"center"} gap="50px">
             <Flex flexDir={"column"} gap={"20px"}>
                 <Text color={primaryColor} fontSize={{base: size24, lg: size32}} fontWeight={700}>
                     Why Creos Hackathon
@@ -38,7 +38,7 @@ const WhyCreosHackathon = () => {
                 </Text>
             </Flex>
 
-            <Box width={"100%"} height={"300px"} background={"black"} />
+            <Box width={"100%"} height={{base:"300px", lg: "600px"}} background={"black"} />
 
         </Grid>
 

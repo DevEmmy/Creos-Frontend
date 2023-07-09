@@ -30,8 +30,8 @@ const Purpose = () => {
                     {
                         purposes.map((p, i)=>{
                             return(
-                                <Flex key={i} alignItems={"center"} gap="1px">
-                                    <Image src={check.src} alt="icon" />
+                                <Flex key={i} alignItems={"center"} gap="8px">
+                                    <Image width={"25px"} src={check.src} alt="icon" />
                                     <Text>{p}</Text>
                                 </Flex>
                             )

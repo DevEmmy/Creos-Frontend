@@ -1,9 +1,10 @@
 'use client';
 
-import { primaryColor } from '@/app/theme';
+import { gap, primaryColor } from '@/app/theme';
 import { Flex, Grid, Link, Box, Text } from '@chakra-ui/react';
 import React from 'react'
 import Logo from './Logo';
+import { socials } from './Socials';
 
 const Footer = () => {
 
@@ -59,7 +60,8 @@ const Footer = () => {
     ]
   return (
     <>
-        <Grid background={primaryColor} color={"white"} gridTemplateColumns={{base: "1fr 1fr",lg:"1.4fr 1fr 1fr 1.2fr"}} gap={"20px"} padding={"50px 10%"} alignItems={"start"}>
+    <Flex background={primaryColor} padding={"50px 10%"} flexDir={"column"} gap={'20px'}>
+         <Grid color={"white"} gridTemplateColumns={{base: "1fr 1fr",lg:"2fr 1.4fr 1.4fr 1.4fr 1fr 1fr"}} gap={"20px"} alignItems={"start"}>
             <Flex display={{base: "none", lg: "flex"}}>
                 <Logo />
             </Flex>
@@ -110,6 +112,44 @@ const Footer = () => {
                 }
             </Flex>
 
+            <Flex
+                flexDir="column"
+                gap={"20px"}
+            >
+
+            
+            <Text>
+                Socials
+            </Text>   
+                {
+                    socials.slice(0, 3).map(({icon, title, link}, index)=>{
+                        return(
+                            <Link key={index} href={link} display={"flex"} alignItems={"center"} color={"white"}>
+                            {icon}
+                            <Text display={"inline"} fontSize={{base: "16px", lg: "16px"}}>{title}</Text>
+                        </Link>
+                        )
+                    })
+                }
+            </Flex>
+
+            <Flex
+                flexDir="column"
+                gap={"20px"}
+            >
+            <Box height={"20px"}/>
+                {
+                    socials.slice(3, 6).map(({icon, title, link}, index)=>{
+                        return(
+                            <Link key={index} href={link} display={"flex"} alignItems={"center"} color={"white"}>
+                            {icon}
+                            <Text display={"inline"} fontSize={{base: "16px", lg: "16px"}}>{title}</Text>
+                        </Link>
+                        )
+                    })
+                }
+            </Flex>
+
             <Box />
 
             <Flex display={{base: "flex", lg: "none"}}>
@@ -117,6 +157,12 @@ const Footer = () => {
             </Flex>
 
         </Grid>
+
+        <Text color={"white"} textAlign={"center"}>
+            &copy; creos| All rights reserved 2021 - 2023
+        </Text>
+    </Flex>
+       
     </>
   )
 }

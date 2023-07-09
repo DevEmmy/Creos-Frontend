@@ -29,19 +29,22 @@ const Sponsorship = () => {
     ]
   return (
         <>
-            <Flex flexDir={"column"} width={{lg:"90", base: "90%"}} margin={`100px auto`} gap={"30px"}>
+            <Flex flexDir={"column"} width={{lg:"88", base: "100%"}} padding={{base:"100px 5%",lg:`100px 6%`}} gap={"30px"}>
                 <Text textAlign={"center"} fontSize={"30px"} fontWeight={"600"}>Need funding or Scholarship</Text>
 
                 <Grid gridTemplateColumns={{base: "none", lg:"1fr 1fr 1fr"}} gap={"50px"}>
                     {sponsors.map((tool, index) => {
                         return (
-                            <Flex key={index} flexDir={"column"} gap={"20px"} padding={"10px"} border={"1px solid #eee"} justifyContent="space-between">
-                                <Image src={rec.src} width="100%" height="200px" background="#eee" />
+                            <Flex key={index} flexDir={"column"} gap={"20px"} height={{base: "620px", lg:"580px"}} padding={"10px"} border={"1px solid #eee"} justifyContent="space-between">
+                                <Flex flexDir={"column"} gap="20px" width={"100%"}>
+                                    <Image src={rec.src} width="100%" height="200px" background="#eee" />
                                 <Flex flexDir={"column"} gap={"10px"}>
                                     <Text fontSize={"20px"} fontWeight={"600"}>{tool.title}</Text>
                                     <Text fontSize={"14px"}>{tool.desc1}</Text>
                                     <Text fontSize={"14px"}>{tool.desc2}</Text>
                                 </Flex>
+                                </Flex>
+                                
                                 <Flex gap={"20px"} flexDir={{base: "column", lg: "row"}}>
                                     <MyButton width={"fit-content"} border={"1px solid"} color={"white"} background={primaryColor} padding={{lg:"16px 24px", base: "12px 20px"}}>
                                         {tool.buttonText}

@@ -1,7 +1,8 @@
-import { Box, Flex, Text } from '@chakra-ui/react'
+import { Box, Flex, Link, Text } from '@chakra-ui/react'
 import React from 'react'
 import MyButton from './MyButton'
 import { dBtnPadding, gap, primaryColor, secondaryColor, size18, size20, size24, size32, size40, xMarginLarge } from '@/app/theme'
+import { ticketLink } from '@/utils/data'
 
 const Events = () => {
     const events = [
@@ -49,13 +50,16 @@ const Events = () => {
                             <Text fontSize={{base: size18, lg: size20}}>{event.desc2}</Text>
 
                             <Flex flexDir={{base: "column", lg: "row"}} gap={"10px"}>
-                                <MyButton
-                                    background={secondaryColor}
-                                    color={"black"}
-                                    padding={{base:'12px 36px', lg:dBtnPadding}}
-                                >
-                                    Get Tickets
-                                </MyButton>
+                                <Link href={ticketLink}>
+                                    <MyButton
+                                        background={secondaryColor}
+                                        color={"black"}
+                                        padding={{base:'12px 36px', lg:dBtnPadding}}
+                                    >
+                                        Get Tickets
+                                    </MyButton>
+                                </Link>
+                                
                                 <MyButton color={secondaryColor} border={"1px solid"}  padding={{base:'12px 36px', lg:dBtnPadding}}>
                                     {"Join" + " " + event.title}
                                 </MyButton>

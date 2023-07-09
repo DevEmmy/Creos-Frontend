@@ -49,8 +49,9 @@ const Tools = () => {
                     {tools.map((tool, index) => {
                         return (
                             <Flex key={index} height={{lg: "628px", base:"688px"}} justifyContent={"space-between"} flexDir={"column"} gap={"20px"}>
-                                <Flex flexDir={"column"} gap={"20px"}>
+                                <Flex flexDir={"column"} gap={"20px"} position={"relative"}>
                                     <Image src={tool.imgUrl.src} width="100%" objectFit={"cover"} height="300px" background="#eee" />
+                                    <Box position={"absolute"} top={0} left={0} background={"rgba(255,255,255, 0.1)"} zIndex={1} width={"100%"} height={"300px"}/>
                                 <Flex flexDir={"column"} gap={"10px"}>
                                     <Text fontSize={"20px"} fontWeight={"600"}>{tool.title}</Text>
                                     <Text>{tool.desc1}</Text>
