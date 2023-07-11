@@ -1,1 +1,1 @@
-export const ticketLink = "https://tix.africa/buy/creos-geek-out-out-business-launch";
+export const ticketLink = "https://tix.africa/buy/creos-geek-out-business-launch";
