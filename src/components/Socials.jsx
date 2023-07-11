@@ -30,12 +30,12 @@ export const socials = [
     {
         icon: <FaDiscord />,
         title: "Discord",
-        link: "/"
+        link: "https://discord.gg/WR7m97x7"
     },
     {
         icon: <FaTiktok />,
         title: "TikTok",
-        link: "/"
+        link: "https://www.tiktok.com/@creosxyz"
     }
 ]
 
