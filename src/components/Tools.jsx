@@ -4,9 +4,9 @@ import { gap, primaryColor } from '@/app/theme';
 import { Box, Button, Flex, Grid, Image, Text } from '@chakra-ui/react';
 import React from 'react'
 import MyButton from './MyButton';
-import tool1 from "@/assets/tool1.png"
-import tool2 from "@/assets/tool2.png"
-import tool3 from "@/assets/tool3.png"
+import tool1 from "@/assets/tool1.jpg"
+import tool2 from "@/assets/tool2.jpg"
+import tool3 from "@/assets/tool3.jpg"
 import tool4 from "@/assets/tool4.png"
 
 const Tools = () => {

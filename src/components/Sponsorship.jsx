@@ -5,6 +5,9 @@ import { Box, Button, Flex, Grid, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 import MyButton from './MyButton';
 import rec from "@/assets/rec.png"
+import icon12 from '@/assets/icon12.jpg'
+import icon11 from '@/assets/icon11.jpg'
+import icon14 from '@/assets/icon14.jpg'
 
 const Sponsorship = () => {
     const sponsors = [
@@ -12,19 +15,22 @@ const Sponsorship = () => {
             title: "Creos Avalon",
             desc1: "Creos Avalon, a subsidiary of Creos, is a groundbreaking program designed to mentor and support creators who are passionate about building sustainable companies that thrive in the era of artificial intelligence.",
             desc2: "We believe that combining creativity with a strong business foundation is the key to driving positive change and shaping a sustainable future.",
-            buttonText: "Get Funded"
+            buttonText: "Get Funded",
+            image: icon12  
         },
         {
             title: "Creos Lab",
             desc1: "Creos Lab, a subsidiary of Creos, is a dynamic platform that empowers verified members with Creos ID to engage in paid projects proposed by top organizations and startups worldwide.",
             desc2: "It serves as a bridge connecting talented creators with exciting opportunities to collaborate, innovate, and contribute their expertise to cutting-edge projects.",
-            buttonText: "Getting Sponsored"
+            buttonText: "Getting Sponsored",
+            image: icon11
         },
         {
             title: "Creos Scholarship",
             desc1: "Creos Scholarship is a transformative program aimed at providing opportunities for underprivileged individuals who possess a deep passion for leveraging their potential to create positive change.",
             desc2: "We firmly believe that everyone deserves a chance to pursue their dreams and unlock their full potential, regardless of their background or financial circumstances.",
-            buttonText: "Apply Now"
+            buttonText: "Apply Now",
+            image: icon14
         }
     ]
   return (
@@ -37,7 +43,7 @@ const Sponsorship = () => {
                         return (
                             <Flex key={index} flexDir={"column"} gap={"20px"} height={{base: "620px", lg:"580px"}} padding={"10px"} border={"1px solid #eee"} justifyContent="space-between">
                                 <Flex flexDir={"column"} gap="20px" width={"100%"}>
-                                    <Image src={rec.src} width="100%" height="200px" background="#eee" />
+                                    <Image src={tool.image.src} width="100%" height="200px" background="#eee" />
                                 <Flex flexDir={"column"} gap={"10px"}>
                                     <Text fontSize={"20px"} fontWeight={"600"}>{tool.title}</Text>
                                     <Text fontSize={"14px"}>{tool.desc1}</Text>

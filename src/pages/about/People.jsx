@@ -1,6 +1,7 @@
 "use client"
 import { Flex, Grid, Image, Text } from '@chakra-ui/react'
 import React from 'react'
+import icon10 from '@/assets/icon10.jpg'
 
 const People = ({title, subText, people}) => {
   return (
@@ -30,7 +31,7 @@ const People = ({title, subText, people}) => {
                     people?.map((person, index)=>{
                         return(
                             <Flex key={index} width={{base: "100%", lg:"100%"}} flexDir={"column"}>
-                                <Image src={person.image} alt={person.name} width={"100%"} height={"30%"} objectFit={"cover"} mb="10px"/>
+                                <Image src={icon10.src} alt={person.name} width={"100%"} height={"30%"} objectFit={"cover"} mb="10px"/>
                                 <Text fontSize={{base: "16px", lg:"18px"}} fontWeight={{lg:"600", base: "600"}}>{person.name}</Text>
                                 <Text fontSize={{base:"14px", lg:"16px"}}>{person.position}</Text>
                             </Flex>
