@@ -51,7 +51,7 @@ const Events = () => {
                             <Text fontSize={{base: size18, lg: size20}}>{event.desc2}</Text>
 
                             <Flex flexDir={{base: "column", lg: "row"}} gap={"10px"}>
-                                <Link href={ticketLink}>
+                                {/* <Link href={ticketLink}> */}
                                     <MyButton
                                         background={secondaryColor}
                                         color={"black"}
@@ -59,7 +59,7 @@ const Events = () => {
                                     >
                                         Get Tickets
                                     </MyButton>
-                                </Link>
+                                {/* </Link> */}
                                 
                                 <MyButton color={secondaryColor} border={"1px solid"}  padding={{base:'12px 36px', lg:dBtnPadding}}>
                                     {"Join" + " " + event.title}

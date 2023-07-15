@@ -47,11 +47,11 @@ const Banner = () => {
                 >
                     <MyButton background={secondaryColor} color={"black"} border={"none"} padding={{base: "12px 36px", lg: dBtnPadding}} fontSize={{base: size16 ,lg:size18}}>Purchase ID</MyButton>
 
-                    <Link href={ticketLink}>
+                    {/* <Link href={ticketLink}> */}
                         <MyButton background={primaryColor} border={`1px solid ${secondaryColor}`} color={secondaryColor} padding={{base: "12px 36px", lg:dBtnPadding}} fontSize={{base: size16 ,lg:size18}}>
                             Get Tickets
                         </MyButton>
-                    </Link>
+                    {/* </Link> */}
                     
                 </Flex>
             

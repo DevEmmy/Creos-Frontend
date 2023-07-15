@@ -13,11 +13,11 @@ const BottomBanner1 = () => {
             Stay tuned for more details and be prepared to embark on an unforgettable journey of creativity, collaboration, and celebration. See you at Creos Geek Out!
             </Text>
 
-          <Link href={ticketLink}>
+          {/* <Link href={ticketLink}> */}
             <MyButton background={primaryColor} color={"white"} padding={{base: "12px 36px", lg: dBtnPadding}} fontSize={"14px"} width={"fit-content"} border={"none"} margin={"20px 0"}>
                   Get Ticket
               </MyButton>
-          </Link>
+          {/* </Link> */}
            
         </Flex>
     </>

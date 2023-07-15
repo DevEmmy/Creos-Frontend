@@ -37,9 +37,9 @@ const Banner = () => {
             >
                 At Creos Geek Out, we believe that your network holds the key to unlocking endless opportunities and success. It&apos;s the perfect platform to foster collaboration, meet potential partners, connect with customers, and so much more.</Text>
 
-            <Link href={ticketLink}>
+            {/* <Link href={ticketLink}> */}
                 <MyButton background={secondaryColor} color={"black"} border={"none"} padding={{base: "12px 36px", lg:dBtnPadding}} fontSize={{base: size16 ,lg:size20}}>Get Tickets</MyButton>
-            </Link>
+            {/* </Link> */}
             
         </Flex>
     </>

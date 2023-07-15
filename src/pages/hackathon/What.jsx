@@ -27,11 +27,11 @@ const What = () => {
                     Over the course of the event, participants will form diverse teams and leverage a wide array of groundbreaking technologies to develop sustainable solutions that address pressing issues in line with the United Nations&apos; Sustainable Development Goals.
                 </Text>
 
-                <Link href={ticketLink}>
+                {/* <Link href={ticketLink}> */}
                 <MyButton background={primaryColor} color={"white"} padding={{base: "12px 36px", lg:dBtnPadding}} fontSize={{base: size16 ,lg:size18}}>
                             Get Tickets
                         </MyButton>
-                </Link>
+                {/* </Link> */}
             </Flex>
         </Grid>
     </>
