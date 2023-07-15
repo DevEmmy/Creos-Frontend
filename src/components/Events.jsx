@@ -1,8 +1,9 @@
-import { Box, Flex, Link, Text } from '@chakra-ui/react'
+import { AspectRatio, Box, Flex, Link, Text } from '@chakra-ui/react'
 import React from 'react'
 import MyButton from './MyButton'
 import { dBtnPadding, gap, primaryColor, secondaryColor, size18, size20, size24, size32, size40, xMarginLarge } from '@/app/theme'
 import { ticketLink } from '@/utils/data'
+import { extractMp4DownloadLink } from '@/utils/youtube2download'
 
 const Events = () => {
     const events = [
@@ -65,7 +66,11 @@ const Events = () => {
                                 </MyButton>
                             </Flex>
 
-                            <Box width={"100%"} height={"500px"} background={"white"}/>
+                            {/* <VideoFrame width={"100%"} height={"500px"} background={"white"}/> */}
+
+                            <AspectRatio width={"100%"} height={"500px"}  ratio={1}>
+                            <iframe src="https://www.youtube.com/embed/uzJDfNaGHag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </AspectRatio>
                         </Flex>
                     )
                 })
