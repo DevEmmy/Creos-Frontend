@@ -1,6 +1,6 @@
 "use client";
 
-import { primaryColor, secondaryColor } from '@/app/theme';
+import { primaryColor, secondaryColor, size24 } from '@/app/theme';
 import { Flex, Link, Menu, MenuButton, useBreakpointValue, MenuItem, MenuList, IconButton, Text, Image } from '@chakra-ui/react'
 // import Link from 'next/link';
 import React, { Fragment } from 'react'
@@ -89,14 +89,17 @@ const Nav = ({active = 0}) => {
                 background={primaryColor}
                 color={"white"}
                 border={"none"}
+                borderTop={"2px solid"}
+                borderRadius={0}
                 height={"100vh"}
                 zIndex={"4"}
+                paddingLeft={"2%"}
             >
                 
                 {
                     navItems.map((item, index)=>{
                         return(
-                            <Link textDecor={"none"} _hover={{"textDecor": "none"}} key={index} href={item.link} color={active == index ? secondaryColor : "color"} fontWeight={ active == index && 600}>
+                            <Link textDecor={"none"} _hover={{"textDecor": "none"}} key={index} href={item.link} color={active == index ? secondaryColor : "color"} fontWeight={ active == index && 600} fontSize={size24}>
                                 <MenuItem background={primaryColor} key={index}>
                                     <Text>{item.title}</Text>
                                 </MenuItem>
