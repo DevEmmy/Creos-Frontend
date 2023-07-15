@@ -84,13 +84,20 @@ const Nav = ({active = 0}) => {
                 display={{base: "inline-flex", md: "none", lg: "none"}}
                 // background={"white"}
             />
-            <MenuList>
+            <MenuList
+                width={"100vw"}
+                background={primaryColor}
+                color={"white"}
+                border={"none"}
+                height={"100vh"}
+                zIndex={"4"}
+            >
                 
                 {
                     navItems.map((item, index)=>{
                         return(
-                            <Link textDecor={"none"} _hover={{"textDecor": "none"}} key={index} href={item.link} color={active == index ? secondaryColor : "black"} fontWeight={ active == index && 600}>
-                                <MenuItem key={index}>
+                            <Link textDecor={"none"} _hover={{"textDecor": "none"}} key={index} href={item.link} color={active == index ? secondaryColor : "color"} fontWeight={ active == index && 600}>
+                                <MenuItem background={primaryColor} key={index}>
                                     <Text>{item.title}</Text>
                                 </MenuItem>
                             </Link>
