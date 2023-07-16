@@ -12,12 +12,16 @@ const Events = () => {
             desc1: "Join us for the groundbreaking event of the year, Creos Hackathon, where creators, innovators, and visionaries unite to shape a sustainable future aligned with the United Nations' Sustainable Development Goals.",
             desc2: "Prepare to be immersed in a whirlwind of cutting-edge technologies, collaborative problem-solving, and the thrill of bringing game-changing ideas to life.",
             videoLink: "",
+            btnText: "Join Creos Hackathon",
+            redirect: "/hackathon"
         },
         {
             title: 'Creos Geek Out',
             desc1: "Join us for a one-of-a-kind gathering where creators come together to have a blast, enjoy immersive experiences, and expand their networks.",
             desc2: "At Creos Geek Out, we believe that your network holds the key to unlocking endless opportunities and success. It's the perfect platform to foster collaboration, meet potential partners, connect with customers, and so much more.",
             videoLink: "",
+            btnText: "Exhibit at Creos Geek Out",
+            redirect: "/geek-out"
         }
     ]
   return (
@@ -51,19 +55,23 @@ const Events = () => {
                             <Text fontSize={{base: size18, lg: size20}}>{event.desc2}</Text>
 
                             <Flex flexDir={{base: "column", lg: "row"}} gap={"10px"}>
-                                {/* <Link href={ticketLink}> */}
+                                <Link href={ticketLink}>
                                     <MyButton
                                         background={secondaryColor}
                                         color={"black"}
                                         padding={{base:'12px 36px', lg:dBtnPadding}}
+                                        inactive={false}
                                     >
                                         Get Tickets
                                     </MyButton>
-                                {/* </Link> */}
+                                </Link>
                                 
-                                <MyButton color={secondaryColor} border={"1px solid"}  padding={{base:'12px 36px', lg:dBtnPadding}}>
-                                    {"Join" + " " + event.title}
-                                </MyButton>
+                            <Link href={event.redirect}>
+                                <MyButton inactive={false} color={secondaryColor} border={"1px solid"}  padding={{base:'12px 36px', lg:dBtnPadding}}>
+                                        {event.btnText}
+                                    </MyButton>
+                            </Link>
+                                
                             </Flex>
 
                             {/* <VideoFrame width={"100%"} height={"500px"} background={"white"}/> */}

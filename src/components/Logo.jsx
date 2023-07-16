@@ -1,4 +1,4 @@
-import { Flex, Image } from '@chakra-ui/react'
+import { Flex, Image, Link } from '@chakra-ui/react'
 import React from 'react';
 import logo from "@/logos/Logo.png";
 
@@ -8,7 +8,10 @@ const Logo = () => {
       width={{base: "119px", lg:"200px"}}
     >
         {/* imported logo */}
-        <Image src={logo.src} alt="logo" height={"auto"} width={"100%"}/>
+        <Link href='/'>
+          <Image src={logo.src} alt="logo" height={"auto"} width={"100%"}/>
+        </Link>
+        
     </Flex>
   )
 }

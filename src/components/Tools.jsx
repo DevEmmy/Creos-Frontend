@@ -7,7 +7,7 @@ import MyButton from './MyButton';
 import tool1 from "@/assets/tool1.jpg"
 import tool2 from "@/assets/tool2.jpg"
 import tool3 from "@/assets/tool3.jpg"
-import tool4 from "@/assets/tool4.png"
+import tool4 from "@/assets/tool4.jpg"
 
 const Tools = () => {
     const tools = [

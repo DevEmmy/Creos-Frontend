@@ -3,7 +3,7 @@
 import React from 'react'
 import Nav from './Nav';
 import Footer from './Footer';
-import { Box, Button, Flex, Grid, Image, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Grid, Image, Text,Link } from '@chakra-ui/react';
 import { dBtnPadding, primaryColor, secondaryColor, size16, size20, size24, size32, size40, size50, xMarginLarge } from '@/app/theme';
 import ToLearn from './ToLearn';
 import Tools from './Tools';
@@ -24,7 +24,11 @@ const Homepage = () => {
             <Flex flexDir={"column"} gap={'20px'} color={"white"}>
                 <Text fontSize={{base:size32, lg:size40}} fontWeight={"600"}>Learn futuristic in-demand technology skills collaborating with AI and Robotics</Text>
                 <Text fontSize={{lg:size20, base: size16}}>Unlock a Sustainable Future: Empower Yourself with Cutting-Edge Tech Skills on Creos</Text>
-                <MyButton padding={{base:'12px 36px',lg: dBtnPadding}} text={"Learn More"} fontSize={{lg:size20, base: size16}} bg={secondaryColor} color={"black"}/>
+                
+                <Link href='/about'>
+                  <MyButton inactive={false} padding={{base:'12px 36px',lg: dBtnPadding}} text={"Learn More"} fontSize={{lg:size20, base: size16}} bg={secondaryColor} color={"black"}/>
+                </Link>
+                
             </Flex>
 
             <Flex position={"relative"}>
