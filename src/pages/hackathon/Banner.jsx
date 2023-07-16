@@ -5,6 +5,7 @@ import MyButton from '@/components/MyButton';
 import { ticketLink } from '@/utils/data';
 import { Button, Flex, Link, Text } from '@chakra-ui/react'
 import React from 'react'
+import { RiPlayCircleFill } from 'react-icons/ri';
 
 const Banner = () => {
   return (
@@ -53,6 +54,10 @@ const Banner = () => {
                         </MyButton>
                     {/* </Link> */}
                     
+                    <Flex display={{base: "none", lg: "flex"}}>
+                        <RiPlayCircleFill color={secondaryColor} cursor={"pointer"} size={"24px"}/>
+                        
+                    </Flex>
                 </Flex>
             
         </Flex>

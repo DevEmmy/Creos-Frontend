@@ -3,7 +3,7 @@ import { Flex, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 import icon10 from '@/assets/icon10.jpg'
 
-const People = ({title, subText, people}) => {
+const People = ({title, subText, people, actualImages}) => {
   return (
     <>
         <Flex
@@ -19,7 +19,7 @@ const People = ({title, subText, people}) => {
             >{title}</Text>
             <Text textAlign={"center"}>{subText}</Text>
             <Flex
-                alignItems={"center"}
+                alignItems={"st"}
                 justifyContent={"center"}
                 gap={{base: "20px", lg:"30px"}}
                 margin={"20px 0"}
@@ -30,7 +30,7 @@ const People = ({title, subText, people}) => {
                     people.map((person, index)=>{
                         return(
                             <Flex key={index} width={{base: "100%", lg:"24vw"}} flexDir={"column"}>
-                                <Image src={icon10.src} alt={person.name} width={"100%"} height={"30%"} objectFit={"cover"} mb="10px"/>
+                                <Image src={actualImages ? person.image : icon10.src} alt={person.name} width={"100%"} height={"300px"} objectFit={"cover"} mb="10px"/>
                                 <Text fontSize={{base: "18px", lg:"20px"}} fontWeight={{lg:"600", base: "600"}}>{person.name}</Text>
                                 <Text fontSize={{base:"16px", lg:"20px"}}>{person.position}</Text>
                             </Flex>

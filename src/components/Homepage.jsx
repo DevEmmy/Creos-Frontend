@@ -12,6 +12,7 @@ import NewsLetter from './NewsLetter';
 import MyButton from './MyButton';
 import image from '@/assets/homepage-banner-image.png'
 import Events from './Events';
+import Stories from './Stories';
 
 const Homepage = () => {
   return (
@@ -36,6 +37,7 @@ const Homepage = () => {
         <Events />
         <Tools />
         <Sponsorship />
+        {/* <Stories /> */}
         <NewsLetter />
 
         <Footer/>

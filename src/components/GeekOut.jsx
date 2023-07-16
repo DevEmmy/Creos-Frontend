@@ -6,6 +6,8 @@ import People from './People'
 import Footer from './Footer'
 import BottomBanner1 from './BottomBanner1'
 import Socials from './Socials'
+import A from "@/assets/A.jpeg";
+import B from "@/assets/B.JPG";
 
 const GeekOut = () => {
   const specialGuest = {
@@ -13,14 +15,14 @@ const GeekOut = () => {
     subText: "Meet with celebrities, your top industry experts and investors",
     people: [
       {
-        name: "Kathryn Murphy",
-        position: "Founder, Louis Vuitton",
-        image: "https://modernlanguages.exeter.ac.uk/includes/images/staff/murphy.jpg"
+        name: "Deborah Ojengbede",
+        position: "CEO AFEN Blockchain Group",
+        image: A.src
       },
       {
-        name: "Kathryn Murphy",
-        position: "Founder, Louis Vuitton",
-        image: "https://modernlanguages.exeter.ac.uk/includes/images/staff/murphy.jpg"
+        name: "Okoye Chinelo",
+        position: "Visionary Brand Strategist",
+        image: B.src
       },
     ]
   }
@@ -75,7 +77,7 @@ const GeekOut = () => {
         <Nav active={4}/>
         <Banner />
         <Expected />
-        <People {...specialGuest}/>
+        <People {...specialGuest} actualImages/>
         <People {...hosts}/>
         <People {...talents}/>
         <BottomBanner1 />

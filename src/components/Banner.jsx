@@ -5,6 +5,7 @@ import { Button, Flex, Link, Text } from '@chakra-ui/react'
 import React from 'react'
 import MyButton from './MyButton';
 import { ticketLink } from '@/utils/data';
+import { RiPlayCircleFill } from 'react-icons/ri';
 
 const Banner = () => {
   return (
@@ -37,9 +38,24 @@ const Banner = () => {
             >
                 At Creos Geek Out, we believe that your network holds the key to unlocking endless opportunities and success. It&apos;s the perfect platform to foster collaboration, meet potential partners, connect with customers, and so much more.</Text>
 
-            {/* <Link href={ticketLink}> */}
-                <MyButton background={secondaryColor} color={"black"} border={"none"} padding={{base: "12px 36px", lg:dBtnPadding}} fontSize={{base: size16 ,lg:size20}}>Get Tickets</MyButton>
-            {/* </Link> */}
+           
+            <Flex
+                    alignItems={"center"}
+                    flexDir={{"base": "column", lg: "row"}}
+                    justifyContent={"center"}
+                    gap={"10px"}
+                >
+
+                     {/* <Link href={ticketLink}> */}
+                    <MyButton background={secondaryColor} color={"black"} border={"none"} padding={{base: "12px 36px", lg:dBtnPadding}} fontSize={{base: size16 ,lg:size20}}>Get Tickets</MyButton>
+                    {/* </Link> */}
+
+                    
+                    <Flex display={{base: "none", lg: "flex"}}>
+                        <RiPlayCircleFill color={secondaryColor} cursor={"pointer"} size={"24px"}/>
+                        
+                    </Flex>
+                </Flex>
             
         </Flex>
     </>
