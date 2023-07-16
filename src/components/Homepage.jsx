@@ -41,7 +41,7 @@ const Homepage = () => {
         <Events />
         <Tools />
         <Sponsorship />
-        {/* <Stories /> */}
+        <Stories />
         <NewsLetter />
 
         <Footer/>

@@ -24,13 +24,15 @@ const Stories = () => {
   return (
     <Flex
         margin={{base: "100px 5%", lg: "100px 6.4%"}}
-        padding={{lg: "50px", base: "60px"}}
+        padding={{lg: "50px", base: "50px 20px"}}
         background={primaryColor}
         color={"white"}
+        overflowX={"scroll"}
+        gap={"30px"}
 
     >
         <Flex flexDir={"column"}>
-            <Text fontSize={size32} fontWeight={600}  lineHeight={1}>
+            <Text fontSize={size32} fontWeight={600} width={"300px"} lineHeight={1}>
                 Community & students stories
             </Text>
             <Text>
@@ -42,13 +44,13 @@ const Stories = () => {
             {
                 stories.map((item, i)=>{
                     return(
-                        <Flex key={i} flexDir={"column"} background={"white"} color={"black"}>
+                        <Flex key={i} flexDir={"column"} background={"white"} color={"black"} padding={"30px"} gap="20px" width={"300px"}>
                             <Text>{'"' + item.desc}</Text>
 
-                            <Flex>
+                            <Flex gap="10px" lineHeight={1} alignItems={"center"}>
                                 <Avatar src={item.person.picture} />
                                 <Flex flexDir={"column"}>
-                                    <Text>{item.person.name}</Text>
+                                    <Text fontWeight={"600"}>{item.person.name}</Text>
                                     <Text>{item.person.title}</Text>
                                 </Flex>
                             </Flex>
