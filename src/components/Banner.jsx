@@ -41,7 +41,7 @@ const Banner = () => {
            
             <Flex
                     alignItems={"center"}
-                    flexDir={{"base": "column", lg: "row"}}
+                    // flexDir={{"base": "column", lg: "row"}}
                     justifyContent={"center"}
                     gap={"10px"}
                 >
@@ -52,7 +52,7 @@ const Banner = () => {
                     </Link>
 
                     
-                    <Flex display={{base: "none", lg: "flex"}}>
+                    <Flex>
                         <RiPlayCircleFill color={secondaryColor} cursor={"pointer"} size={"24px"}/>
                         
                     </Flex>
