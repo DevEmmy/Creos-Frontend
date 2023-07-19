@@ -43,7 +43,7 @@ const Sponsorship = () => {
                         return (
                             <Flex key={index} flexDir={"column"} gap={"20px"} height={{base: "620px", lg:"580px"}} padding={"10px"} border={"1px solid #eee"} justifyContent="space-between">
                                 <Flex flexDir={"column"} gap="20px" width={"100%"}>
-                                    <Image src={tool.image.src} width="100%" height="200px" background="#eee" />
+                                    <Image src={tool.image.src} width="100%" height="200px" background="#eee" alt="image" />
                                 <Flex flexDir={"column"} gap={"10px"}>
                                     <Text fontSize={"20px"} fontWeight={"600"}>{tool.title}</Text>
                                     <Text fontSize={"14px"}>{tool.desc1}</Text>

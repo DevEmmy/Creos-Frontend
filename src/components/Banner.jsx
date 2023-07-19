@@ -1,7 +1,7 @@
 'use client';
 
 import { dBtnPadding, primaryColor, secondaryColor, size16, size20, size40 } from '@/app/theme'
-import { Button, Flex, Link, Text } from '@chakra-ui/react'
+import { AspectRatio, Button, Flex, Link, Text } from '@chakra-ui/react'
 import React from 'react'
 import MyButton from './MyButton';
 import { ticketLink } from '@/utils/data';
@@ -57,6 +57,10 @@ const Banner = () => {
                         
                     </Flex>
                 </Flex>
+
+                <AspectRatio width={"100%"} height={"500px"}  ratio={1}>
+                <iframe  src="https://www.youtube-nocookie.com/embed/N7-1AVAsWmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </AspectRatio>
             
         </Flex>
     </>
