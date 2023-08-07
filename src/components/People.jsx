@@ -11,6 +11,7 @@ const People = ({title, subText, people, actualImages}) => {
             flexDir={"column"}
             width={{lg:"80%", base:"90%"}}
             margin={"80px auto"}
+            
         >
             <Text
                 fontSize={"26px"}
@@ -25,14 +26,15 @@ const People = ({title, subText, people, actualImages}) => {
                 margin={"20px 0"}
                 width={"100%"}
                 flexDir={{base: "column", lg: "row"}}
+                flexWrap={"wrap"}
             >
                 {
                     people.map((person, index)=>{
                         return(
-                            <Flex key={index} width={{base: "100%", lg:"24vw"}} flexDir={"column"}>
+                            <Flex key={index} minW={{base: "100%", lg:"24vw"}} maxW={{base: "100%", lg:"24vw"}} flexDir={"column"}>
                                 <Image src={actualImages ? person.image : icon10.src} alt={person.name} width={"100%"} height={"300px"} objectFit={"cover"} mb="10px"/>
-                                <Text fontSize={{base: "18px", lg:"20px"}} fontWeight={{lg:"600", base: "600"}}>{person.name}</Text>
-                                <Text fontSize={{base:"16px", lg:"20px"}}>{person.position}</Text>
+                                <Text fontSize={{base: "18px", lg:"18px"}} fontWeight={{lg:"600", base: "600"}}>{person.name}</Text>
+                                <Text fontSize={{base:"16px", lg:"16px"}}>{person.position}</Text>
                             </Flex>
                         )
                     })

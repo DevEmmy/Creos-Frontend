@@ -15,6 +15,11 @@ const GeekOut = () => {
     subText: "Meet with celebrities, your top industry experts and investors",
     people: [
       {
+        name: "Daniel Lumiere",
+        position: "Founder, Creos XYZ Group",
+        image: "/daniel.JPG"
+      },
+      {
         name: "Deborah Ojengbede",
         position: "CEO AFEN Blockchain Group",
         image: A.src
@@ -24,51 +29,66 @@ const GeekOut = () => {
         position: "Visionary Brand Strategist",
         image: B.src
       },
+      {
+        name: "Olatuni B. Alonge",
+        position: "Business Coach",
+        image: "/olatunji.JPG"
+      },
+      {
+        name: "Nkasiobi Chukwu",
+        position: "Creator of Africa's first AI powered music album",
+        image: "/chukwu.jpg"
+      }
     ]
   }
 
   const hosts = {
-    title: "Meet our Hosts",
-    subText: "One of them is hot cake and the second is a daily breakfast server! Don’t miss the party!!!",
+    title: "Creators Journey",
+    // subText: "One of them is hot cake and the second is a daily breakfast server! Don’t miss the party!!!",
     people: [
       {
-        name: "Kathryn Murphy",
-        position: "Founder, Louis Vuitton",
-        image: "https://modernlanguages.exeter.ac.uk/includes/images/staff/murphy.jpg"
+        name: "Inneh Joseph",
+        position: "Affiliate Marketing Expert",
+        image: "/inneh.jpg"
       },
       {
-        name: "Kathryn Murphy",
-        position: "Founder, Louis Vuitton",
-        image: "https://modernlanguages.exeter.ac.uk/includes/images/staff/murphy.jpg"
-      },
-      {
-        name: "Kathryn Murphy",
-        position: "Founder, Louis Vuitton",
-        image: "https://modernlanguages.exeter.ac.uk/includes/images/staff/murphy.jpg"
-      },
+        name: "Emmanuel Ovuo",
+        position: "Forex Specialist",
+        image: "/ovuo.JPG"
+      }
     ]
   }
 
   const talents = {
-    title: "Meet the Talents",
+    title: "Live Performing",
     subText: "Enjoy unbelievable experience through hidden talented in Africa demonstrated at Creos Geek Out.",
     people: [
       {
-        name: "Kathryn Murphy",
-        position: "Founder, Louis Vuitton",
-        image: "https://modernlanguages.exeter.ac.uk/includes/images/staff/murphy.jpg"
+        name: "Oluwaseun Adeojo",
+        position: "Visual Artist",
+        image: "seun.JPG"
       },
       {
-        name: "Kathryn Murphy",
-        position: "Founder, Louis Vuitton",
-        image: "https://modernlanguages.exeter.ac.uk/includes/images/staff/murphy.jpg"
+        name: "Vocamonix",
+        position: "Music Live Performance",
+        image: "vocamonix.jpg"
       },
-      {
-        name: "Kathryn Murphy",
-        position: "Founder, Louis Vuitton",
-        image: "https://modernlanguages.exeter.ac.uk/includes/images/staff/murphy.jpg"
-      },
+    ]
+  }
 
+  const influencers = {
+    title: "Creos Geek Out Influencers of the year",
+    people: [
+      {
+        name: "Loveth Ogbene",
+        position: "Creos Geek Out Female Influencer of the year",
+        image: "/loveth.jpg"
+      },
+      {
+        name: "Nachristo",
+        position: "Creos Geek Out Male Influencer of the year",
+        image: "/nachristo.jpg"
+      }
     ]
   }
 
@@ -78,8 +98,9 @@ const GeekOut = () => {
         <Banner />
         <Expected />
         <People {...specialGuest} actualImages/>
-        <People {...hosts}/>
-        <People {...talents}/>
+        <People {...influencers} actualImages/>
+        <People {...talents} actualImages/>
+        <People {...hosts} actualImages/>
         <BottomBanner1 />
         <Socials />
         <Footer />
