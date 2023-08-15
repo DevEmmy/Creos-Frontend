@@ -32,7 +32,7 @@ const People = ({title, subText, people, actualImages}) => {
                     people.map((person, index)=>{
                         return(
                             <Flex key={index} minW={{base: "100%", lg:"24vw"}} maxW={{base: "100%", lg:"24vw"}} flexDir={"column"}>
-                                <Image src={actualImages ? person.image : icon10.src} alt={person.name} width={"100%"} height={"300px"} objectFit={"cover"} mb="10px"/>
+                                <Image src={actualImages ? person.image : icon10.src} alt={person.name} width={"100%"} height={"300px"} objectFit={"cover"} mb="10px" loading='lazy'/>
                                 <Text fontSize={{base: "18px", lg:"18px"}} fontWeight={{lg:"600", base: "600"}}>{person.name}</Text>
                                 <Text fontSize={{base:"16px", lg:"16px"}}>{person.position}</Text>
                             </Flex>
